@@ -1,29 +1,37 @@
 ﻿@charset "UTF-8";
+
+
 header {
-    font-family: 'Montserrat',sans-serif;
-    color: black;
+    color: whitesmoke;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
     background: url(../images/cafe.png) center;
+    font-family: 'Reenie Beanie', cursive;
 }
 
-header h1 {
-        padding: 0.8em 1em;
-        font-size: 1em;
-        margin-top: 1.5em;
-        
-}
+    header h1 {
+        padding: 0.2em 0.2em;
+        font-size: 80px;
+        margin-top: 2em;
+        background-color: rgba(0,0,0,0.4);
+
+    }
 
     header p {
         font-style: italic;
-        margin-top: -1.2em;
-        margin-top: -12px;
-        padding-bottom: 15em;
+        margin-top: 3px;
+        padding-bottom: 10em;
         
 
     }
 
+header p span{
+    background-color: rgba(0,0,0,0.4);
+    padding:12.5px;
+    font-size: 25px;
+
+}
 
 
 nav div {
@@ -35,8 +43,7 @@ nav div {
     padding: 25px;
     min-width: 8em;
     transition: all ease 1s;
-
-   
+    font-size: 30px;
 }
 
 .navbar-custom .navbar-nav .nav-link:hover {
@@ -44,11 +51,7 @@ nav div {
 }
 
 
-header h1{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:45px;
-    
-    }
+
     /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
