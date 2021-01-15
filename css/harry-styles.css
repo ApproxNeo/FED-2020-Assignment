@@ -13,12 +13,12 @@ main{
     padding:10px;
 }
 
-    main img {
+    body img {
         height: 200px;
         width: 200px;
-        /*
+        
         position: absolute;
         left: 0;
         top: 0;
-        */
+        
     }
