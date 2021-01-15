@@ -13,10 +13,15 @@ main{
     padding:10px;
 }
 
+#slideshow {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    top: 50%;
+}
 body img {
+    position: absolute;
     height: 500px;
     width: 500px;
-    position: absolute;
-    left:50%;
-    top: 300px;
 }
