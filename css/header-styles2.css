@@ -1,9 +1,14 @@
 ﻿@charset "UTF-8";
 header {
-    color:black;
+    color: whitesmoke;
+    background-attachment: fixed;
     background-size: cover;
-    background-attachment:fixed;
     text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+    background: url(../images/cafe.png) bottom;
+    max-height: 50vh;
+    width: auto;
+    animation: flyin 1.2s ease forwards;
 }
 
 
@@ -13,9 +18,10 @@ nav div {
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
     color: #ffffff;
-    padding: 25px;
+    padding: 15px;
     min-width: 6em;
     transition: all ease 1s;
+    font-size: 30px;
 }
 
     .navbar-custom .navbar-nav .nav-link:hover {
