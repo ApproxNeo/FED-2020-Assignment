@@ -22,6 +22,11 @@ main{
 }
 body img {
     position: absolute;
-    height: 500px;
-    width: 500px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    
+    height:500px;
+    width:500px;
+
 }
