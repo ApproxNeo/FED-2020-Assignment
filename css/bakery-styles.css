@@ -9,7 +9,7 @@ html {
 }
 
 
-.col-sm-3 {
+.col-md-3 {
     padding: 1em 1em 1em 1em;
     color: black;
     background: linear-gradient( white, white 50%, #333 50%, #333 );
@@ -17,15 +17,15 @@ html {
     transition: all 0.2s ease;
     animation: down-bump 0.4s ease;
 }
-.col-sm-3 p{
+.col-md-3 p{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:20px;
 }
-.col-sm-3:hover {
+.col-md-3:hover {
         background-position: 100% 100%;
         animation: up-bump 0.4s ease;
 }
-.col-sm-3:hover p{
+.col-md-3:hover p{
     color:white;
 }
 
