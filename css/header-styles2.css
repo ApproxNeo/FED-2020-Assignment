@@ -4,8 +4,8 @@ header {
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
-    background: url(../images/cafe.png) bottom;
     font-family: 'Reenie Beanie', cursive;
+    background: url(../images/cafe.png) bottom;
     max-height: 50vh;
     width: auto;
     animation: flyin 1.2s ease forwards;
