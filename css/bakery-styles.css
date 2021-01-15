@@ -181,6 +181,7 @@ main img {
         height: 80%;
         width: 100%;
         position: absolute;
+        padding-bottom:4.5em;
 }
 /* aside "hours" styles */
 aside {
@@ -194,7 +195,15 @@ aside {
     opacity: 0;
     transition: all 1s ease-out;
     padding-right:3em;
+    padding-bottom:3em;
 }
+textarea:hover{
+    border-color:red
+}
+input:hover {
+    border-color: red
+}
+
 /*
 p:hover{
     color:black;
