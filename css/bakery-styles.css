@@ -192,11 +192,12 @@ aside {
     opacity: 0;
     transition: all 1s ease-out;
 }
-
+/*
 p:hover{
     color:black;
     opacity:0.5;
 }
+    */
 #contact {
     background-attachment: fixed;
     background-position:center;

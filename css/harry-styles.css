@@ -1,8 +1,7 @@
 ﻿@charset "UTF-8";
 
 /* Set the box-sizing model to border-box for all the elements in the document */
-html {
-    box-sizing: border-box;
+
 }
 * {
   box-sizing: inherit;
