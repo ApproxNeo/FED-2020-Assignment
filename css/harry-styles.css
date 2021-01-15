@@ -4,6 +4,22 @@
 html {
     box-sizing: border-box;
 }
+
 * {
   box-sizing: inherit;
 }
+
+main{
+    margin:20px;
+    padding:10px;
+}
+
+    main img {
+        height: 200px;
+        width: 200px;
+        /*
+        position: absolute;
+        left: 0;
+        top: 0;
+        */
+    }

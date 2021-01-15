@@ -6,36 +6,41 @@
     <title>Maybelline</title>
     <meta name="authors" content="Aidel, Clement, Dashini, Isha, Jing Yu " />
     <meta name="description" content="FED Website" />
-
+    <!--bootstrap-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-
+    <!--stylesheets-->
     <link rel="stylesheet" href="css/harry-styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/index-slideshow/slideshow.js"></script>
 </head>
 <body>
-    
-        <!--header-->
-        <div class="row">
 
-            <div class="col-sm-12 row-no-gutters">
+    <!--header-->
+    <div class="row">
 
-                <div w3-include-html="header.html"></div>
+        <div class="col-sm-12 row-no-gutters">
 
-            </div>
+            <div w3-include-html="header.html"></div>
+
         </div>
+    </div>
 
-        <!--content-->
-        <div class="row">
-            <div class="col-sm-12">
-                <main>
-
-                </main>
-            </div>
+    <!--content-->
+    <div class="row">
+        <div class="col-sm-12">
+            <main onload="fadeImage(4);">
+                <img id="1" src="images/index-slideshow/cafe.jpg" />
+                <img id="2" src="images/index-slideshow/cake.jpg" />
+                <img id="3" src="images/index-slideshow/coffee.jpg" />
+                <img id="4" src="images/index-slideshow/pizza.jpg" />
+            </main>
         </div>
+    </div>
 
-    
     <section style="height:10000px"></section>
 
 
