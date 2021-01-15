@@ -1,6 +1,5 @@
 ﻿@charset "UTF-8";
 header {
-    font-family: 'Montserrat',sans-serif;
     color:black;
     background-size: cover;
     background-attachment:fixed;
@@ -24,10 +23,7 @@ nav div {
     }
 
 
-header h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-}
+
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
