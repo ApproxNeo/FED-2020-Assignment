@@ -1,13 +1,22 @@
 ﻿/* footer styles */
+
+form{
+    border:double;
+    color:black;
+    padding-top:2em;
+    padding-bottom:2em;
+    margin-right:3em;
+}
 footer {
     font-family: verdana, sans-serif;
     border: unset;
-    color: #EADDC4;
     text-align: center;
     font-size: .8em;
     padding-top: 40px;
     padding-bottom: 20px;
-    margin:0;
-    background-color: saddlebrown;
+    margin-top:-11em;
+    background-color: rosybrown;
 }
-
+    footer:hover {
+        color: #EADDC4;
+    }

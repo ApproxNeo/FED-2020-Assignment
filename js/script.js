@@ -54,7 +54,7 @@ var scene = new ScrollMagic.Scene({
 
 if ($(window).width() > 992) {
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 500) {
+        if ($(this).scrollTop() > 50) {
             $('#navbar_top').addClass("fixed-top");
             // add padding top to show content behind navbar
             $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
