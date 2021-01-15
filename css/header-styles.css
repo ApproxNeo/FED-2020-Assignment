@@ -6,10 +6,11 @@ header {
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
-    background: url(../images/cafe.png) center;
+    background: url(../images/cafe.png) bottom;
     font-family: 'Reenie Beanie', cursive;
-    max-height:50vh;
-    width:auto;
+    max-height: 50vh;
+    width: auto;
+    animation: flyin 1.2s ease forwards;
 }
 
     header h1 {
@@ -63,5 +64,6 @@ nav div {
 /* change the hamburger button button outline color when it is clicked */
 .navbar-toggler:focus, .navbar-toggler:active {
     outline-color: #F9AB33;
+
     /*margin: 0.5em;  Set margin to align the border with menu text */
 }
