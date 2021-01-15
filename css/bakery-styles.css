@@ -1,0 +1,242 @@
+﻿@charset "UTF-8";
+
+/* Set the box-sizing model to border-box for all the elements in the document */
+html {
+    box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+
+.col-sm-3 {
+    padding: 1em 1em 1em 1em;
+    color: black;
+    background: linear-gradient( white, white 50%, #333 50%, #333 );
+    background-size: 100% 202%;
+    transition: all 0.2s ease;
+    animation: down-bump 0.4s ease;
+}
+.col-sm-3 p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+}
+.col-sm-3:hover {
+        background-position: 100% 100%;
+        animation: up-bump 0.4s ease;
+}
+.col-sm-3:hover p{
+    color: white;
+}
+@keyframes down-bump {
+    0% {
+        padding-top: 2em;
+    }
+
+    50% {
+        padding-top: 2.5em;
+    }
+
+    100% {
+        padding-top: 2em;
+    }
+}
+@keyframes up-bump {
+    0% {
+        padding-top: 2em;
+    }
+
+    50% {
+        padding-top: 1.5em;
+    }
+
+    100% {
+        padding-top: 2em;
+    }
+}
+
+body {
+    font-family: Verdana, Arial, serif;
+    font-size: 100%;
+    background-color:white;
+    margin: 0;
+}
+
+/* main "products" styles */
+main {
+    font-family: 'Stint Ultra Expanded', Georgia, serif;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.8em;
+    padding: 1em;
+    border: inset 4px #EADDC4;
+    border-radius: 25px;
+    margin-top: 1em;
+    opacity: 0;
+    /*margin: 2.5%*/
+    transition: all 1s ease-out;
+}
+.form {
+    border: inset 4px #EADDC4;
+    padding: 30px 20px 20px 30px;
+    padding-bottom: 1em;
+    padding-top: 1.1em;
+    border-radius: 10px 10px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+h6 {
+    font-weight: bold;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    height:100%;
+    opacity: 0.6;
+}
+
+h3 {
+background-color:antiquewhite;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p.more {
+    font-family: verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: .8em;
+    color: black;
+    background-color: antiquewhite;
+    clear: left;
+    opacity: 0.6;
+}
+.btn {
+    background-color: rosybrown;
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'Stint Ultra Expanded', Georgia, serif;
+}
+.btn:hover {
+        background-color: Black; /* Green */
+        color: white;
+        
+    }
+
+
+main img {
+    float: left;
+    /*margin: 0 1em 1em 0;*/
+    width: 55%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+}
+
+.carousel-item {
+    height: 10%;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+
+
+.h3-responsive {
+    background-color: antiquewhite;
+    margin: 10px;
+    padding: 1em 1em 1em 1em;
+    color: black;
+    text-align: center;
+    opacity: 0.6;
+
+}
+.map-container-6 {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin: 2em 2em 2em 2em;
+    opacity:0;
+    transition:all 1s ease-out;
+}
+    .map-container-6.show, aside.fadeIn, .form.show,main.fadeIn {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+.map-container-6 iframe {
+        left: 0;
+        top: 0;
+        height: 80%;
+        width: 100%;
+        position: absolute;
+}
+/* aside "hours" styles */
+aside {
+    background-color: #F6F3ED;
+    padding: 1em;
+    padding-left: 45px;
+    margin-top: 1em;
+    height: 94%;
+    border: inset 4px #EADDC4;
+    border-radius: 10px 10px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+p:hover{
+    color:black;
+    opacity:0.5;
+}
+#contact {
+    background-attachment: fixed;
+    background-position:center;
+    background-image: url('https://images.ctfassets.net/uexfe9h31g3m/4QkXMhsdYsc02YeUe0CYEQ/62224da40d3ced131dfa7674e0fb0269/quorn-meat-free-pieces-mexican-pizza.jpg?fm=jpg&fit=thumb&w=1200&h=630&fl=progressive');
+    padding-bottom:9em;
+    margin-top:1em;
+    background-repeat:no-repeat;
+}
+
+.img-fluid, #carouselExampleIndicators {
+    padding-bottom: 1em;
+    padding-top: 1.1em;
+}
+.img-fluid {
+    transition: transform .2s; /* Animation */
+    opacity: 0.6;
+}
+    .img-fluid:hover {
+        transform: scale(0.8); /* (80% zoom)*/
+        opacity:1.0;
+    }
+
+
+/* misc styles */
+h2 {
+  font-family: 'Stint Ultra Expanded', Georgia, serif;
+  font-size:40px;
+  padding:30px 10px 30px 10px;
+}
+
+.day {
+  color: #783F27;
+  font-family: verdana, sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+.onsubmit{
+    font-size:50px;
+}
+
+
+ 
+

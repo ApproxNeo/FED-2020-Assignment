@@ -1,0 +1,43 @@
+﻿@charset "UTF-8";
+header {
+    font-family: 'Montserrat',sans-serif;
+    color:black;
+    background-size: cover;
+    background-attachment:fixed;
+    text-align: center;
+}
+
+#item1, #item2, #item3, #item4, #item5, #item6 {
+    padding-right: 4em;
+}
+nav div {
+    background-color: rgba(0,0,0,0.4);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff;
+    padding: 25px;
+    min-width: 8em;
+    transition: all ease 1s;
+}
+
+    .navbar-custom .navbar-nav .nav-link:hover {
+        background-color: #211b4385;
+    }
+
+
+header h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: red;
+}
+
+/* change the hamburger button button outline color when it is clicked */
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline-color: #F9AB33;
+    /*margin: 0.5em;  Set margin to align the border with menu text */
+}

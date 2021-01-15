@@ -7,21 +7,27 @@
     <!-- Bootstrap minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- jQuery library -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
     <script src="js/jquery-3.3.1.min.js"></script>
+
     <!-- Bootstrap JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- CSS that supports Stint Ultra Expanded Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
     <!-- Site specific Cascading Stylesheet -->
-    <link rel="stylesheet" href="css/harry-styles.css">
+    <link rel="stylesheet" href="css/bakery-styles.css">
     <title>Pizza</title>
     <!-- To Do: Reference to the JavaScript library for including a HTML page -->
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="js/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Create a full width Bootstrap container1-->
-    
+<body  >
+    <!-- Create a full width Bootstrap container-->
+    <div class="container-fluid">
         <!-- 1st row - Header -->
         <div class="row">
             <div class="col-sm-12">
@@ -29,31 +35,71 @@
                 <div class="pizza_pic" w3-include-html="header.html"></div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- To Do: Include the header section -->
+                <div class="pizza_pic" w3-include-html="header2.html"></div>
+            </div>
+        </div>
 
+        <h3 id="about">About Pizza</h3>
         <!-- 2nd row - Content Section -->
         <div class="row">
             <!-- Left column - Main content (67% width) -->
-            <div class="col-sm-8">
+            <div class="col-sm-6">
+                <img class="img-fluid" src="images/cheesy_pizza.jpg" alt="cheesy pizza">
+            </div>
+            <div class="col-sm-6">
                 <main>
-                    <h2>Pizza Lovers</h2>
-                    <h3>Fresh Cheesy Pizza</h3>
-                    <p>
-                        <img class="img-fluid" src="images/cheesy_pizza.jpg" alt="cheesy pizza">
-                        Pizza  is a savory dish of Italian origin consisting of a usually round, flattened base of leavened
-                        wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.),
-                        which is then baked at a high temperature, traditionally in a wood-fired oven.[1] A small pizza is sometimes called a pizzetta.
-                    </p>
-                    <p class="more"><a href="https://en.wikipedia.org/wiki/Pizza">Learn more about pizza...</a></p>
-
-                    <h3>Fun Facts About Pizza</h3>
-                    <p><img class="img-fluid" src="images/pizza2.jpg" alt="one chocolate chip muffin">1.The first pizza is thought to have been invented in Naples in the early 1500s.<br />2.The first known documentation of the word "pizza" is from 997 C.E.<br /><br /></p>
-                    <p class="more"><a href="https://www.eatthis.com/pizza-facts/">Learn more about the fun facts of pizza...</a></p>
+                    Pizza  is a savory dish of Italian origin consisting of a usually round, flattened base of leavened
+                    wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.),
+                    which is then baked at a high temperature, traditionally in a wood-fired oven.[1] A small pizza is sometimes called a pizzetta.
+                    A person who makes pizza is known as a pizzaiolo.<br /><br /><br /><br /><br />
+                    <button class="btn" onclick="window.location.href='https://en.wikipedia.org/wiki/Pizza';">
+                        Click Here
+                    </button>
                 </main>
             </div>
-            <!-- Right column - Side bar (33% width) -->
+        </div>
+        <h3>Fun Facts About Pizza</h3>
+        <div class="row">
+            <div class="col-sm-3">
+                <p>
+                    <img class="img-fluid" src="images/pizza2.jpg" alt="one chocolate chip muffin">
+                    1.Pizzas in Italy were originally square-shaped
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <p>
+                    <img class="img-fluid" src="images/pizza2.jpg" alt="one chocolate chip muffin">
+                    1.The first pizza is thought to have been invented in Naples in the early 1500s
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <p>
+                    <img class="img-fluid" src="images/pizza2.jpg" alt="one chocolate chip muffin">
+                    1.Eating pizza once a week may reduce the risk of esophageal cancer.
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <p>
+                    <img class="img-fluid" src="images/pizza2.jpg" alt="one chocolate chip muffin">
+                    1.Pizza can be healthy
+                </p>
+            </div>
+        </div>
+        <button class="btn" onclick="window.location.href='https://www.eatthis.com/pizza-facts/';">
+            Click Here
+        </button>
+        <div class="row">
+            <div class="col-sm-12 " id="contact">
+                <h6>COOK WITH EASE!</h6>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm-4">
                 <aside>
-                    <h2>Ingredients to make pizza</h2>
+                    <h2>Items to make pizza</h2>
                     <p><span class="day">1.</span>1 1/2 cups (355 ml) warm water (105°F-115°F)</p>
                     <p><span class="day">2.</span> 1 package (2 1/4 teaspoons) of active dry yeast</p>
                     <p><span class="day">3.</span> 3 3/4 cups (490 g) bread flour</p>
@@ -61,84 +107,120 @@
                     <p><span class="day">5.</span> 2 teaspoons salt</p>
                     <p><span class="day">6.</span> 1 teaspoon sugar</p>
                     <p><span class="day">7.</span> Toppings of your choice</p>
-                    <p class="more"><a href="https://www.simplyrecipes.com/recipes/homemade_pizza/">Find more information about the ingredients...</a></p>
+                    <button class="btn" onclick="window.location.href='https://www.simplyrecipes.com/recipes/homemade_pizza/';">
+                        Click Here
+                    </button>
                 </aside>
             </div>
-        </div>
-        <!-- Slide show to show the various steps -->
-        <h2>Time to make pizza of your choice!</h2>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/dough2.jpg" alt="baker with dough">
-                    <div class="carousel-caption">
-                        <h3 class="h3-responsive">Time to make the dough</h3>
-                        <p class="more">
-                            1.Make and knead the pizza dough: Add the flour,active yeast, salt, sugar, and olive oil, and knead using hand or mixer <br />
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/baker-with-dough.jpg" alt="Second slide">
-                    <div class="carousel-caption">
-                        <h3 class="h3-responsive"> Continue preparing your dough</h3>
-                        <p class="more">
-                            2. Let the dough rise for 1.5 hours in a warm place.Spread a thin layer of olive oil over the inside of a large bowl. Place the pizza dough in the bowl and turn it around.<br />
-                            3. Divide the dough in half. Place on parchment paper or a lightly floured dish and place, uncovered, in the freezer for 15 to 20 minutes.<br />
+            <div class="col-sm-8">
+                <!-- Slide show to show the various steps -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/dough2.jpg" alt="baker with dough">
+                            <div class="carousel-caption">
+                                <h3 class="h3-responsive">Time to make pizza</h3>
+                                <p class="more">
+                                    1.Make and knead the pizza dough: Add the flour,active yeast, salt, sugar, and olive oil, and knead using hand or mixer <br />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/dough3.jpg" alt="Second slide">
+                            <div class="carousel-caption">
 
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/adding.jpg" alt="Third slide">
-                    <div class="carousel-caption">
-                        <h3 class="h3-responsive">Add your toppings of choice</h3>
-                        <p class="more">
-                            5. Flatten dough into round<br />
-                            6.  Brush dough top with olive oil<br />
-                            7. Add food toppings of choice and customise it to your likings!<br />
+                                <p class="more">
+                                    2. Let dough rise for 1.5 hours in a warm place.Spread a thin layer of olive oil over the inside of a large bowl.Place the pizza dough in the bowl and turn it around.<br />
+                                    3. Divide the dough in half. Place on parchment paper or a lightly floured dish and place, uncovered, in the freezer for 15 to 20 minutes.<br />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/adding.jpg" alt="Third slide">
+                            <div class="carousel-caption">
 
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/pizza_cutting.jpg" alt="Fourth slide">
-                    <div class="carousel-caption">
-                        <h3 class="h3-responsive">Bake and serve</h3>
-                        <p class="more">
-                            8.  Bake pizza in the 475°F (245°C) oven, one at a time, until the crust is browned and the cheese is golden, about 10-15 minutes.<br />
-                            9.  Once done,It's time to serve the pizza<br />
-                        <p class="more"><a href="https://www.simplyrecipes.com/recipes/homemade_pizza/">Find more about the steps...</a></p>
+                                <p class="more">
+                                    5. Flatten dough into round<br />
+                                    6.  Brush dough top with olive oil<br />
+                                    7. Add food toppings of choice and customise it to your likings!<br />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/pizza_cutting.jpg" alt="Fourth slide">
+                            <div class="carousel-caption">
 
+                                <p class="more">
+                                    8.  Bake pizza in the 475°F (245°C) oven, one at a time, until the crust is browned and the cheese is golden, about 10-15 minutes.<br />
+                                    9.  Once done,It's time to serve the pizza<br />
+                                    <button class="btn" onclick="window.location.href='https://www.simplyrecipes.com/recipes/homemade_pizza/';">
+                                        Click Here
+                                    </button>
+                            </div>
+                        </div>
                     </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
-        <h2>Subscribe to monthly newsletter on pizza for free! </h2>
-            <form method="get" class="form" id="form" name="myForm" onsubmit="alert( 'Thank you for your subscription!') ">
-                <label for="fname">Name:</label>
-                <input type="text" id="fname" name="fname" autocomplete="on" required><br />
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br /><br />
-                <input type="submit" value="Submit" />
-                <input type="reset" value="Clear form" />
-                <p id="result"></p>
-            </form>
-      
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Video</h3>
+                <iframe width="1234" height="550" src="https://www.youtube.com/embed/FwlabJoSdCs" frameborder="0" allow="accelerometer; autoplay;
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <h3>Drop us a message</h3>
+        <div class="row">
+            <div class="col-md-7">
+                <img class="img-fluid" src="images/cheesy_pizza.jpg" alt="cheesy pizza">
+            </div>
+
+            <div class="col-md-5">
+                <form method="get" class="form" id="form" name="myForm">
+                    <h2>Contact Us!</h2>
+                    <label for="fname">Name:</label>
+                    <input type="text" id="fname" name="fname" autocomplete="on" required><br />
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[6|8|9]\d{7}|\+65[6|8|9]\d{7}|\+65\s[6|8|9]\d{7}" required><br />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br /><br />
+                    <label for="message">Message:</label><br />
+                    <textarea id="w3review" name="w3review" rows="4" cols="30" required></textarea><br />
+                    <input type="checkbox" name="tc" value="tc">
+                    <label for="tc">Terms and Conditions.<a href="TandC.html">Click here to know more about the </a></label>
+                    <input type="submit" value="Submit" id="fname" name="fname" onclick="showHint(this.value)" />
+                    <input type="reset" value="Clear form" />
+                    <br /><br /><span></span>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 " id="contact">
+                <h6>OUR LOCATION!</h6>
+            </div>
+        </div>
+        <div class="col-sm-12 ">
+            <!--Google map-->
+            <div id="map-container-google-11" class="z-depth-1-half map-container-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.740097620749!2d103.77216941404437!3d1.33206399902847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da107d8eb4e359%3A0x75d2e7ffdeeb0c43!2sNgee%20Ann%20Polytechnic!5e0!3m2!1sen!2ssg!4v1580431876161!5m2!1sen!2ssg"
+                        frameborder="0" style="border:0; border-radius:10px;" allowfullscreen></iframe>
+            </div>
+        </div>
         <!-- 3rd row - Footer -->
         <div class="row">
             <div class="col-sm-12">
@@ -146,11 +228,17 @@
                 <div w3-include-html="footer.html"></div>
             </div>
         </div>
-    <!-- end #container div -->
 
-    <!-- To Do: Call the includeHTML() function when loading the page -->
-    <script>
-        w3.includeHTML();
-    </script>
+    </div>
+
+
+
+
+
+        <!-- To Do: Call the includeHTML() function when loading the page -->
+        <script>
+            w3.includeHTML();
+
+        </script>
 </body>
 </html>
