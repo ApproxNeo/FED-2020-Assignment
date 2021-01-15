@@ -25,6 +25,9 @@ html {
         background-position: 100% 100%;
         animation: up-bump 0.4s ease;
 }
+.col-sm-3:hover p{
+    color:white;
+}
 
 @keyframes down-bump {
     0% {
