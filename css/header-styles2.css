@@ -7,9 +7,7 @@ header {
     text-align: center;
 }
 
-#item1, #item2, #item3, #item4, #item5, #item6 {
-    padding-right: 4em;
-}
+
 nav div {
     background-color: rgba(0,0,0,0.4);
 }
@@ -17,7 +15,7 @@ nav div {
 .navbar-custom .navbar-nav .nav-link {
     color: #ffffff;
     padding: 25px;
-    min-width: 8em;
+    min-width: 6em;
     transition: all ease 1s;
 }
 
@@ -28,7 +26,7 @@ nav div {
 
 header h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 45px;
+    font-size: 25px;
 }
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
