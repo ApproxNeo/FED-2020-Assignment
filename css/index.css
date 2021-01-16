@@ -12,7 +12,7 @@ main{
     padding:10px;
 }
 
-#slideshow {
+#slideshow{
     
 }
 body img:not(header) {
@@ -20,15 +20,29 @@ body img:not(header) {
     margin: auto;
     left: 0;
     right: 0;
-    /*
-    height:500px;
-    width:500px;
-    */
 }
 
-#slideshow img{
-    margin-top: 2em;
-    object-fit:cover;
-    height:100%;
-    width:100%;
+#slideshow img {
+    margin-top: 8em;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#btn {
+    position: absolute;
+    margin: auto;
+    text-align:center;
+    left: 0;
+    right: 0;
+    width:500px;
+    padding:20px;
+    font-size:1em;
+    background-color:darkslategrey;
+    color:whitesmoke;
+    margin-top:2em;
+}
+
+#footer{
+    margin-top:60.3em;
 }
