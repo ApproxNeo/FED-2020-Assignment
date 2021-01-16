@@ -153,5 +153,10 @@ h1 {
 }
 
 img{
-    max-height:230px;
+    max-width:570px;
+}
+
+.portfolio {
+    padding-top: 20px;
+    max-width: 1200px;
 }
