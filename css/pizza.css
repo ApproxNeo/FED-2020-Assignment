@@ -62,7 +62,9 @@ body {
     background-color: white;
     margin: 0;
 }
-
+.pizza_pic2{
+    padding-top:3em;
+}
 /* main "products" styles */
 main {
 
@@ -157,28 +159,13 @@ main img {
     opacity: 0.6;
 
 }
-.map-container-6 {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-    margin: 2em 2em 2em 2em;
-    opacity:0;
-    transition:all 1s ease-out;
-}
+
     .map-container-6.show, aside.fadeIn, .form.show,main.fadeIn {
         opacity: 1;
         transform: translateY(0);
     }
 
-.map-container-6 iframe {
-        left: 0;
-        top: 0;
-        height: 80%;
-        width: 100%;
-        position: absolute;
-        padding-bottom:4.5em;
-}
+
 aside {
     background-color: #F6F3ED;
     padding: 1em;
