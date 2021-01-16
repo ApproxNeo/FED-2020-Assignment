@@ -2,7 +2,6 @@
 
 /* Set the box-sizing model to border-box for all the elements in the document */
 
-}
 
 * {
   box-sizing: inherit;
@@ -14,19 +13,22 @@ main{
 }
 
 #slideshow {
-    margin: auto;
-    width: 60%;
-    border: 3px solid #73AD21;
-    padding: 10px;
-    top: 50%;
+    
 }
 body img:not(header) {
     position: absolute;
     margin: auto;
     left: 0;
     right: 0;
-    
+    /*
     height:500px;
     width:500px;
+    */
+}
 
+#slideshow img{
+    margin-top: 2em;
+    object-fit:cover;
+    height:100%;
+    width:100%;
 }
