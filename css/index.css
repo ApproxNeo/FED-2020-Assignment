@@ -20,7 +20,7 @@ main{
     padding: 10px;
     top: 50%;
 }
-body img {
+body img:not(header) {
     position: absolute;
     margin: auto;
     left: 0;

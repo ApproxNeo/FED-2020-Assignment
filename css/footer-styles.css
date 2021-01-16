@@ -3,8 +3,7 @@
 form{
     border:double;
     color:black;
-    padding-top:2em;
-    padding-bottom:2em;
+    padding:2em;
     margin-right:3em;
 }
 footer {
@@ -17,6 +16,21 @@ footer {
     margin-top:-11em;
     background-color: rosybrown;
 }
-    footer:hover {
-        color: #EADDC4;
-    }
+
+.footer input{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.footer form{
+    padding:2em;
+}
+
+.footer li, a, ul{
+    text-align:left;
+}
