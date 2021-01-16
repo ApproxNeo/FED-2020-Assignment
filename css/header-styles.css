@@ -15,7 +15,7 @@ header {
 
     header h1 {
         padding: 0.2em 0.2em;
-        font-size: 8vh;
+        font-size: 4vw;
         margin-top: 2em;
         background-color: rgba(0,0,0,0.4);
 
@@ -25,8 +25,7 @@ header {
         font-style: italic;
         margin-top: 3px;
         padding-bottom: 10em;
-        
-
+        font-size: 2vw;
     }
 
 header p span{
