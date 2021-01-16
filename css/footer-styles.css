@@ -1,19 +1,17 @@
 ﻿/* footer styles */
-
+html,body { margin:0; padding:0; }
 form{
     border:double;
     color:black;
     padding:2em;
-    margin-right:3em;
 }
 footer {
     font-family: verdana, sans-serif;
-    border: unset;
     text-align: center;
     font-size: .8em;
     padding-top: 40px;
     padding-bottom: 20px;
-    margin-top:-11em;
+    
     background-color: rosybrown;
 }
 
@@ -27,8 +25,9 @@ footer {
     box-sizing: border-box;
 }
 
-.footer form{
-    padding:2em;
+.footer form {
+    padding: 2em;
+    margin-right: 20px;
 }
 
 .footer li, a, ul {
