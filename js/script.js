@@ -50,7 +50,7 @@ if ($(window).width() > 992) {
         if ($(this).scrollTop() >300 ) {
             $('#navbar_top').addClass("fixed-top");
             // add padding top to show content behind navbar
-            $('body').css('padding-top', $('.fa-bars').outerHeight() + 'px');
+            $('body').css('padding-top', $('.fa-angle-right').outerHeight() + 'px');
         } else {
             $('#navbar_top').removeClass("fixed-top");
             // remove padding top from body
