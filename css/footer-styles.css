@@ -31,6 +31,7 @@ footer {
     padding:2em;
 }
 
-.footer li, a, ul{
-    text-align:left;
+.footer li, a, ul {
+    text-align: left;
+    list-style-type: none;
 }
