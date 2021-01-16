@@ -57,9 +57,9 @@ html {
 }
 
 body {
-    font-family: Verdana, Arial, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 100%;
-    background-color:white;
+    background-color: white;
     margin: 0;
 }
 
