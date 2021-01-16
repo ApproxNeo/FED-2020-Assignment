@@ -5,11 +5,31 @@
     <meta charset="utf-8" />
 
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>B.B. Tea!</title>
-</head>
-<body>
 
+    <link rel="shortcut icon" type="image/jpg" href="images/bbtea.ico" />
+</head>
+
+
+<body>
+    <div>
+        <div class="row">
+            <div class="col-md-12">
+                <div w3-include-html="header.html"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 footer">
+                <div w3-include-html="footer.html"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
 </html>
