@@ -57,7 +57,7 @@ if ($(window).width() > 992) {
         if ($(this).scrollTop() >300 ) {
             $('#navbar_top').addClass("fixed-top");
             // add padding top to show content behind navbar
-            $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+            $('body').css('padding-top', $('.fa-bars').outerHeight() + 'px');
         } else {
             $('#navbar_top').removeClass("fixed-top");
             // remove padding top from body
@@ -67,3 +67,12 @@ if ($(window).width() > 992) {
 } // end if
 
 
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}

@@ -56,14 +56,12 @@ html {
     }
 }
 
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 100%;
     background-color: white;
     margin: 0;
-}
-.pizza_pic2{
-    padding-top:3em;
 }
 /* main "products" styles */
 main {
