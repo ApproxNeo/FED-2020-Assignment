@@ -160,7 +160,7 @@ main img {
 
 }
 
-    .map-container-6.show, aside.fadeIn, .form.show,main.fadeIn {
+   aside.fadeIn, .form.show,main.fadeIn {
         opacity: 1;
         transform: translateY(0);
     }
