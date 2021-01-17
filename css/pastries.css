@@ -1,0 +1,93 @@
+﻿
+
+
+
+/* global styles */
+
+body {
+    font-family: 'Arvo', serif;
+}
+
+
+/* intro styles */
+#intro {
+    padding: 25px;
+    margin: 10px;
+    border: dotted;
+    border-radius: 5px;
+    border-color: lightpink;
+}
+
+#intro h1 {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+#cookie1 {
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    background-color:lightpink;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: bisque;
+}
+
+.container:hover .overlay {
+    opacity: 0.8;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#learnmore {
+    padding: 10px;
+    color: black;
+    border: solid;
+    background-color: bisque;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#learnmore:hover{
+    background-color: bisque;
+    opacity: 0.4;
+
+}
+
+/* Recipe styles */
+
+
