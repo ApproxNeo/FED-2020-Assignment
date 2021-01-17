@@ -1,0 +1,24 @@
+﻿
+
+
+body
+{
+}
+
+
+/* intro styles */
+#intro {
+    padding: 20px;
+
+}
+
+#intro h1 {
+    background-color: antiquewhite;
+}
+
+#cookie1 {
+    padding: 10px;
+    height: 400px;
+    width: 400px;
+
+}
