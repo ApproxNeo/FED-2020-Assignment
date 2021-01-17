@@ -62,7 +62,8 @@ nav div {
 
 /* change the hamburger button button outline color when it is clicked */
 .navbar-toggler:focus, .navbar-toggler:active {
-    outline-color: #F9AB33;
+    outline-color:aqua;
+    background-color: rgba(0,0,0,0.4);
 
     /*margin: 0.5em;  Set margin to align the border with menu text */
 }
