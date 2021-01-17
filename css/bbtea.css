@@ -152,3 +152,9 @@
                 transform: translate3d(-4.5px, -4.5px, 50px) scale(.95)
             }
 
+#recipeBlended i,
+#recipeBlended a,
+#recipeBlended p,
+#recipeBlended h1{
+    margin:10px;
+}
