@@ -155,6 +155,7 @@
 #recipeBlended i,
 #recipeBlended a,
 #recipeBlended p,
-#recipeBlended h1{
-    margin:10px;
+#recipeBlended h1,
+#recipeBlended img {
+    margin: 10px;
 }
