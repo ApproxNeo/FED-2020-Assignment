@@ -8,6 +8,11 @@ body {
     font-family: 'Arvo', serif;
 }
 
+h1 {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    font-family: 'Hachi Maru Pop', cursive;
+}
 
 /* intro styles */
 #intro {
@@ -16,12 +21,6 @@ body {
     border: dotted;
     border-radius: 5px;
     border-color: lightpink;
-}
-
-#intro h1 {
-    background-color: antiquewhite;
-    border-radius: 5px;
-    font-family: 'Hachi Maru Pop', cursive;
 }
 
 #cookie1 {
@@ -89,5 +88,16 @@ body {
 }
 
 /* Recipe styles */
+#recipe {
+    padding: 25px;
+    margin: 10px;
+    border: dotted;
+    border-radius: 5px;
+    border-color: lightpink;
+}
+
+#tipslist li{
+    margin:10px;
+}
 
 
