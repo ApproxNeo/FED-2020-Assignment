@@ -16,18 +16,46 @@
 </head>
 
 <body>
+    <script>
+        function lightInfo() {
+            document.getElementById('roast-info').innerHTML = 'Light, or Blonde roast coffee, is a mellow-tasting coffee that may have tasting notes of fruit, or nuts. Light roast coffees have a high acidity, and their light colour is due to being roasted for a shorter period of time. This is also the reason why light roast coffee has the highest caffeine content among the roast profiles.';
+        }
+
+        function medInfo() {
+            document.getElementById('roast-info').innerHTML = 'Medium roast coffees are less acidic than light roast coffees, as they have been roasted for longer. The flavours of a medium roast coffee may resemble caramel, and these roasts tend to be more popular among coffee drinkers.';
+        }
+
+        function darkInfo() {
+            document.getElementById('roast-info').innerHTML = 'Dark roast coffee contains the least amount of caffeine in the roast profile spectrum, and are the least acidic. The flavour of the dark roast can be best described as the flavour most people associate with coffee.';
+        }
+    </script>
+
     <!--header-->
     <div class="row">
         <div class="col-sm-12 row-no-gutters">
             <div w3-include-html="header.html"></div>
         </div>
 
-        <div class="col-sm-12" id="roasts">
-            <figure><img src="images/coffee-images/roasts.jpg" /></figure>
-            <button id="light" type="button">Light</button>
-            <button id="medium" type="button">Medium</button>
-            <button id="dark" type="button">Dark</button>
-        </div>
+        <main>
+
+            <div class="col-sm-12" id="roasts">
+                <h5>How would you like your coffee?</h5>
+                <figure>
+                    <img src="images/coffee-images/roasts.jpg" />
+                </figure>
+                <button onclick="lightInfo()" id="light" type="button">Light</button>
+                <button onclick="medInfo()" id="medium" type="button">Medium</button>
+                <button onclick="darkInfo()" id="dark" type="button">Dark</button>
+                <div id="roast-caption">
+                    <p id="roast-info">click on the beans to learn about different roast levels!</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <p>enjoy a cup of your favourite brew with some <a id="cookielink" href="pastries.html">cookies</a></p>
+            </div>
+
+        </main>
 
         <div class="col-sm-12 footer">
             <div w3-include-html="footer.html"></div>
