@@ -1,24 +1,25 @@
 ﻿
 <script src="js/script.js" defer></script>
 <link rel="stylesheet" href="css/header-styles2-pizza.css">
-
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <body>
-    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-custom navbar-dark">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse row" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item" id="item1"><a class="nav-link" href="#about"> Pizza </a></li>
-                    <li class="nav-item" id="item2"><a class="nav-link" href="#fun"> Fun Facts </a></li>
-                    <li class="nav-item" id="item3"><a class="nav-link" href="#ingredients"> Bake </a></li>
-                    <li class="nav-item" id="item4"><a class="nav-link" href="#video"> Video </a></li>
-                    <li class="nav-item" id="item5"><a class="nav-link" href="#form"> Contact us </a></li>
-                    <li class="nav-item" id="item6"><a class="nav-link" href="#map-container-google-11"> Location </a></li>
-                </ul>
-            </div> <!-- navbar-collapse.// -->
-        </div> <!-- container.// -->
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-dark ">
+        <div id="mySidenav" class="sidenav">
+
+            <a href="javascript:void(0)"  onclick="closeNav()">&times;</a>
+            <a href="#about">Pizza</a>
+            <a href="#fun">Fun Facts</a>
+            <a href="#ingredients">Bake</a>
+            <a href="#video">Video</a>
+            <a href="#try">Must try!</a>
+            <a href="#form">Contact</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <i id="navbar_top" class="fas fa-angle-right fa-4x" onclick="openNav()"></i>
+
+
     </nav>
+
+
 </body>
