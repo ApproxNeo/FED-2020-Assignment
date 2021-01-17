@@ -6,18 +6,37 @@
     <title>Coffee</title>
     <!-- Add the responsive viewport meta tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Reference to Bootstrap libraries -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--bootstrap-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- CSS that supports Stint Ultra Expanded Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
-    <!-- Site specific Cascading Stylesheet -->
-    <link rel="stylesheet" href="css/harry-styles.css">
-    <!-- To Do: Reference to the JavaScript library for including a HTML page -->
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="css/coffee.css" />
 </head>
+
 <body>
+    <!--header-->
+    <div class="row">
+        <div class="col-sm-12 row-no-gutters">
+            <div w3-include-html="header.html"></div>
+        </div>
+
+        <div class="col-sm-12" id="roasts">
+            <figure><img src="images/coffee-images/roasts.jpg" /></figure>
+            <button id="light" type="button">Light</button>
+            <button id="medium" type="button">Medium</button>
+            <button id="dark" type="button">Dark</button>
+        </div>
+
+        <div class="col-sm-12 footer">
+            <div w3-include-html="footer.html"></div>
+        </div>
+    </div>
+
+    <script>
+        w3.includeHTML();
+    </script>
 
 </body>
 </html>

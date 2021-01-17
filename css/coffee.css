@@ -1,0 +1,38 @@
+﻿body
+{
+}
+
+#roasts {
+    margin: 10px auto;
+    text-align:center;
+}
+
+#roasts img{
+    object-fit: cover;
+    width:80%;
+}
+
+#roasts button{
+    position:absolute;
+    top:40%;
+    width:8%;
+    padding:1px;
+    font-size:2vw;
+    border:none;
+    color:maroon;
+}
+
+#light {
+    left: 27.5%;
+    background-color:goldenrod;
+}
+
+#medium{
+    left:46%;
+    background-color:saddlebrown;
+}
+
+#dark {
+    right: 27.5%;
+    background-color:#362204;
+}
