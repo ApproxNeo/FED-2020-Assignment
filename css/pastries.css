@@ -109,3 +109,22 @@ h1 {
     border-color: lightpink;
 }
 
+#ingredients li {
+    margin: 10px;
+}
+
+#instructions li {
+    margin: 10px
+}
+
+#coffeelink {
+    text-decoration: none;
+    background-color: bisque;
+    color: black;
+}
+
+#coffeelink:hover {
+    background-color: bisque;
+    opacity: 0.8;
+    
+}
