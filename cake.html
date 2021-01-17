@@ -3,16 +3,19 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="author" content="Aidel" />
+    <meta name="description" content="Cake Page" />
     <!--bootstrap-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="js/cake.js"></script>
+
     <!--stylesheets-->
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Cake</title>
+    <link rel="stylesheet" href="css/cake.css" />
 
-    
+    <title>Cake</title>
 </head>
 <body>
     <div class="row">
@@ -20,7 +23,87 @@
             <div w3-include-html="header.html"></div>
         </div>
     </div>
+    <!--About Cake-->
+    <h2 class="AboutCake">About Cake</h2>
+    <p>A breadlike food made from a dough or batter that is usually fried or baked in small flat shapes and is often unleavened.</p>
+    <p><cite>https://www.merriam-webster.com/dictionary/cake</cite></p>
+    <!-------------->
+    <!--Types of Cakes-->
+    <h2 class="CakeTypes">Types of Cakes</h2>
+    <p>
+        There are many types of cakes, ranging from culture to culture.
+        However, this page will be focusing on the popular types of cakes.
+    </p>
+    <ul>
+        <li>Butter Cakes</li>
+        <!--https://12tomatoes.com/brown-butter-cake/-->
+        <li>Chiffon Cakes</li>
+        <!--https://cookingwithdog.com/recipe/chiffon-cake/-->
+        <li>Pound Cakes</li>
+        <!--https://www.onceuponachef.com/recipes/perfect-pound-cake.html-->
+        <li>Carrot Cakes</li>
+        <!--https://www.inspiredtaste.net/25753/carrot-cake-recipe/-->
+        <li>Sponge Cakes</li>
+        <!--https://www.foodinaminute.co.nz/Recipes/Easy-Butter-Sponge-Cake-->
+        <li>Red Velvet Cakes</li>
+        <!--https://www.foodnetwork.com/recipes/southern-red-velvet-cake-recipe-2011892-->
+    </ul>
+    <!-- Slideshow-->
+    <div class="slideshow-container">
 
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="images/ButterCake.jpg" style="width:50%">
+            <div class="text">Butter Cake</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="images/ChiffonCake.jpg" style="width:50%">
+            <div class="text">Chiffon Cakes</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="images/PoundCake.jpg" style="width:50%">
+            <div class="text">Pound Cake</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="images/CarrotCake.jpg" style="width:50%">
+            <div class="text">Carrot Cake</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="images/SpongeCake.jpg" style="width:50%">
+            <div class="text">Sponge Cake</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="images/RedVelvetCake.jpeg" style="width:50%">
+            <div class="text">Red Velvet Cake</div>
+        </div>
+
+        <!-- Next & Prev -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- Dots -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    <!------------------>
     <div class="row">
         <div class="col-md-12 footer">
             <div w3-include-html="footer.html"></div>
