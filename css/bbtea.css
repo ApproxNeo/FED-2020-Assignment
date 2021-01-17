@@ -1,6 +1,11 @@
 ﻿body {
 }
 
+
+.intro {
+    padding:100px;
+}
+
 .parallax {
     display: block;
     height: auto;
