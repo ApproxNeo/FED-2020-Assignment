@@ -145,3 +145,5 @@
             .parallax .parallax-bottom-right:focus ~ .parallax-content .parallax-front,
             .parallax .parallax-bottom-right:hover ~ .parallax-content .parallax-front {
                 transform: translate3d(-4.5px, -4.5px, 50px) scale(.95)
+            }
+
