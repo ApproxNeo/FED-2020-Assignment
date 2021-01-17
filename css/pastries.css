@@ -1,7 +1,4 @@
 ﻿
-
-
-
 /* global styles */
 
 body {
@@ -26,7 +23,7 @@ h1 {
 #cookie1 {
     padding: 10px;
     height: auto;
-    width: 100%;
+    width: 500px;
     background-color:lightpink;
     border-radius: 5px;
     margin: 5px;
@@ -100,4 +97,15 @@ h1 {
     margin:10px;
 }
 
+#tipheader {
+    font-size: 20px;
+}
+
+#recipedetails {
+    padding: 25px;
+    margin: 10px;
+    border: dotted;
+    border-radius: 5px;
+    border-color: lightpink;
+}
 
