@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+
+    <script src="js/cookieform.js" defer></script>
     <title>Cookies</title>
 
 </head>
@@ -179,20 +181,19 @@
                         <label id="formlabel" for="star" title="text">rating*</label>
 
                         <label id="label" for="star" title="text">1⭐</label>
-                        <input name="star" id="star1" type="radio" required/>
-
+                        <input class ="rating" name="star" id="star1" type="radio" value="1" required/>
 
                         <label id="label" for="star" title="text">2⭐</label>
-                        <input name="star" id="star2" type="radio" />
+                        <input class ="rating" name="star" id="star2" type="radio" value="2" />
 
                         <label id="label" for="star" title="text">3⭐</label>
-                        <input name="star" id="star3" type="radio" />
+                        <input class ="rating" name="star" id="star3" type="radio" value="3" />
 
                         <label id="label" for="star" title="text">4⭐</label>
-                        <input name="star" id="star4" type="radio" />
+                        <input class ="rating" name="star" id="star4" type="radio" value="4"/>
 
                         <label id="label" for="star" title="text">5⭐</label>
-                        <input name="star" id="star5" type="radio" />
+                        <input class ="rating" name="star" id="star5" type="radio" value="5"/>
 
                         <br>
 
@@ -217,9 +218,8 @@
 
                         <br>
                         <br>
-
-                        <button id="submit"onclick="">Submit</button>
-
+                        
+                        <button type="button" id="submission" onclick="setoutputs()">Submit</button>
                         <p id="output"></p>
                     </form>
                 </section>

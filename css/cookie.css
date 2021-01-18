@@ -189,12 +189,12 @@ h1 {
     margin: 0px 10px 0px 10px;
 }
 
-#submit {
+#submission {
     background-color: bisque;
     border-color: lightpink;
 }
 
-#submit:hover{
+#submission:hover{
     opacity:0.8;
     background-color: white;
 }
