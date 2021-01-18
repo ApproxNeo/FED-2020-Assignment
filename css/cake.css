@@ -6,6 +6,24 @@
     box-sizing: border-box
 }
 
+/*-----About Cake-----*/
+.aboutCake {
+    border: dashed;
+    margin: 10px;
+    padding: 10px;
+}
+
+.header {
+    font-family: 'Allan', cursive;
+    margin: 10px;
+}
+
+.paragraph {
+    margin: 10px;
+}
+/*--------------------*/
+
+/*-----Types of Cake-----*/
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -89,3 +107,4 @@
     animation-duration: 1.5s;
     opacity:1;
 }
+/*-----------------------*/
