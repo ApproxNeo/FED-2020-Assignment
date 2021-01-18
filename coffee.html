@@ -42,37 +42,32 @@
 
             <!--roast profiles div-->
             <div class="row">
-                <div class="col-sm-12" id="roasts">
-                    <h5>How would you like your coffee?</h5>
-                    <figure>
-                        <img src="images/coffee-images/roasts.jpg" />
-                    </figure>
-                    <button onclick="lightInfo()" id="light" type="button">Light</button>
-                    <button onclick="medInfo()" id="medium" type="button">Medium</button>
-                    <button onclick="darkInfo()" id="dark" type="button">Dark</button>
-                    <div id="roast-caption">
-                        <p id="roast-info">click on the beans to learn about different roast profiles!</p>
-                    </div>
-                    <hr />
-                </div>
-            </div>
-
-            <!--recipes-->
-            <div class="row">
-                <div class="col-sm-6" id="recipe">
-                    <h5>Pro tips for home brewing</h5>
-                    <ul>
-                        <li><b>Know your grind sizes.</b> Different coffee brewing contraptions require different coffee ground sizes in order to
-                        extract them perfectly. Grind sizes range from fine (eg. Turkish) to coarse (eg. French Press). If unsure about the
-                        size of grind your machine requires, ask your friendly local coffee shop!</li>
-                    </ul>
-                </div>
-            </div>
-
-            <br />
-
-            <div class="row">
                 <div class="col-sm-12">
+                    <div id="roasts">
+                        <h5>How would you like your coffee?</h5>
+                        <figure>
+                            <img src="images/coffee-images/roasts.jpg" />
+                        </figure>
+                        <button onclick="lightInfo()" id="light" type="button">Light</button>
+                        <button onclick="medInfo()" id="medium" type="button">Medium</button>
+                        <button onclick="darkInfo()" id="dark" type="button">Dark</button>
+                        <div id="roast-caption">
+                            <p id="roast-info">click on the beans to learn about different roast profiles!</p>
+                        </div>
+                        <hr />
+                    </div>
+
+                    <div class="col-sm-6" id="recipe" style="max-width:50%">
+                        <h5>Pro tips for home brewing</h5>
+                        <ul>
+                            <li>
+                                <b>Know your grind sizes.</b> Different coffee brewing contraptions require different coffee ground sizes in order to
+                                extract them perfectly. Grind sizes range from fine (eg. Turkish) to coarse (eg. French Press). If unsure about the
+                                size of grind your machine requires, ask your friendly local coffee shop!
+                            </li>
+                        </ul>
+                    </div>
+                    <br />
                     <aside>
                         <div class="col-sm-6" id="recipe">
                             <h5>Discover your favourite drink</h5>
@@ -101,9 +96,9 @@
                             </ol>
                         </div>
                     </aside>
+
                 </div>
             </div>
-
             <br />
         </main>
 
