@@ -159,3 +159,16 @@
 #recipeBlended img {
     margin: 10px;
 }
+
+#topic{
+    background-color:antiquewhite;
+    margin:10px;
+    border:solid;
+    border-radius:10px;
+    border-color:bisque
+}
+
+#topic:hover{
+    opacity:0.5;
+
+}
