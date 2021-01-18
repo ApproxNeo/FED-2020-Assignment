@@ -35,5 +35,7 @@ function submission() {
 
     if (cansubmit) {
         document.getElementById("thanksyou").innerHTML = "Thank you for filling in this survey!";
+    } else {
+        document.getElementById("thanksyou").innerHTML = "";
     }
 }
