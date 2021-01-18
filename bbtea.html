@@ -7,6 +7,7 @@
     <!--bootstrap-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bbtea.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <!--stylesheets-->
 
@@ -156,9 +157,7 @@
         <div class="col-md-4">
             <h1 style="text-align:center;"><span id="topic">Make your own B.B. tea!</span></h1>
             <table style="border:solid;margin-left: auto; margin-right: auto;border-radius:20px;">
-                <caption>
-                    Ingredients
-                </caption>
+                
                 <tr>
                     <th>Quantity</th>
                     <th>Ingredient</th>
@@ -207,6 +206,63 @@
                     <b>Assemble the drinks:</b> Strain the tea into a pitcher. Divide the cooked tapioca pearls into 4 large glasses. Pour 1 cup of the tea into each glass. Add 2 tablespoons of milk and 2 tablespoons of simple syrup into each glass. Stir and taste the milk tea. Add more milk or simple syrup to your taste.
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <div class="row" style="margin:30px 0 30px 0;">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-6">
+            <h1><span id="topic">Hey you!</span></h1>
+            <p>Yeah you! Do you like bubble tea? If you do, do take some time to help us complete this short survey!</p>
+            <form class="survey" id="survey">
+                <p>What kind of bubble tea is your favourite?</p>
+                <div>
+                    <label class="radio-inline" style="background-color:blanchedalmond;padding:15px;margin:-3px;">
+                        <input id="t1" type="radio" name="type" required>Classic
+                    </label>
+                    <label class="radio-inline" style="background-color:blanchedalmond;padding:15px;margin:-3px;">
+                        <input id="t2" type="radio" name="type">Ice Blended
+                    </label>
+                    <label class="radio-inline" style="background-color:blanchedalmond;padding:15px;margin:-3px;">
+                        <input id="t3" type="radio" name="type">Fruit Tea
+                    </label>
+                    <p style="color:red;" id="alert1"></p>
+                </div>
+                <br /><br />
+                <p>Why do you like this category most of all?</p>
+                <textarea class="reason" rows="4" cols="50" placeholder="Your opinion here!"></textarea>
+                <p>How many flavors of bubble tea do you think there are?</p>
+                <div>
+                    <label class="radio-inline" style="background-color:blanchedalmond;padding:15px;margin:-3px;">
+                        <input id="t4" type="radio" name="optradio" required>< 10
+                    </label>
+                    <label class="radio-inline" style="background-color:blanchedalmond;padding:15px;margin:-3px;">
+                        <input id="t5" type="radio" name="optradio">< 100
+                    </label>
+                    <label class="radio-inline" style="background-color:blanchedalmond;padding:15px;margin:-3px;">
+                        <input id="t6" type="radio" name="optradio">> 100
+                    </label>
+                    <p style="color:red;" id="alert2"></p>
+                </div>
+                <br />
+                <label>Name:</label>
+                <br />
+                <input id="nameinput" class="reason" placeholder="Enter name here!" type="text" required />
+                <p style="color:red;" id="alert3"></p>
+                <br />
+                <label>Email:</label>
+                <br />
+                <input id="emailinput" class="reason" placeholder="Enter email here!" type="email" required />
+                <p style="color:red;" id="alert4"></p>
+                <input  type="submit" onclick="submission(); return false;" />
+
+                <p style="color:red;font-size:20px;" id="thanksyou"></p>
+            </form>
+        </div>
+        <div class="col-md-3">
+
         </div>
     </div>
     <div class="row" style="border-top:solid;">
