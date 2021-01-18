@@ -189,12 +189,12 @@ h1 {
     margin: 0px 10px 0px 10px;
 }
 
-#submit {
+#submission {
     background-color: bisque;
     border-color: lightpink;
 }
 
-#submit:hover{
+#submission:hover{
     opacity:0.8;
     background-color: white;
 }
@@ -213,8 +213,21 @@ h1 {
     width: 800px;
     border-color: lightpink;
 }
+
 #table tr,th,td{
     border: solid;
-    padding: 10px;
-    
+    padding: 15px;
+}
+
+#table table{
+    margin: 20px 20px 0px 50px; 
+    border: dotted;
+}
+
+#left {
+    background-color: lightpink;
+}
+
+#right {
+    background-color: bisque;
 }

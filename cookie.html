@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+
+    <script src="js/cookieform.js" defer></script>
     <title>Cookies</title>
 
 </head>
@@ -176,31 +178,30 @@
 
                         <br>
 
-                        <label id="formlabel" for="star" title="text">rating</label>
+                        <label id="formlabel" for="star" title="text">rating*</label>
 
                         <label id="label" for="star" title="text">1⭐</label>
-                        <input name="star" id="star1" type="radio" />
-
+                        <input class ="rating" name="star" id="star1" type="radio" value="1" required/>
 
                         <label id="label" for="star" title="text">2⭐</label>
-                        <input name="star" id="star2" type="radio" />
+                        <input class ="rating" name="star" id="star2" type="radio" value="2" />
 
                         <label id="label" for="star" title="text">3⭐</label>
-                        <input name="star" id="star3" type="radio" />
+                        <input class ="rating" name="star" id="star3" type="radio" value="3" />
 
                         <label id="label" for="star" title="text">4⭐</label>
-                        <input name="star" id="star4" type="radio" />
+                        <input class ="rating" name="star" id="star4" type="radio" value="4"/>
 
                         <label id="label" for="star" title="text">5⭐</label>
-                        <input name="star" id="star5" type="radio" />
+                        <input class ="rating" name="star" id="star5" type="radio" value="5"/>
 
                         <br>
 
-                        <label id="formlabel" for="comment" title="text">comment*</label>
+                        <label id="formlabel" for="comment" title="text">comment</label>
                         <br>
                         <textarea id="comment" name="comment"
                                   cols="80" rows="8"
-                                  placeholder="feedback or general comments :)" required></textarea>
+                                  placeholder="feedback or general comments :)" ></textarea>
 
                         <br>
                         <label id="formlabel" for="name" title="text">name*</label>
@@ -217,9 +218,8 @@
 
                         <br>
                         <br>
-
-                        <button id="submit"onclick="">Submit</button>
-
+                        
+                        <button type="button" id="submission" onclick="setoutputs()">Submit</button>
                         <p id="output"></p>
                     </form>
                 </section>
@@ -255,38 +255,47 @@
 
                 <section id="cookievideo">
                     <h1>a video</h1>
-                    <iframe width="750" height="506" src="https://www.youtube.com/embed/wyuec0PPz68" 
+                    <iframe width="735" height="506" src="https://www.youtube.com/embed/wyuec0PPz68" 
                             frameborder="0" allow="accelerometer; autoplay; clipboard-write;
                             encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
                 </section>
 
                 <section id="table">
-                    <h1>common mistakes</h1>
+                    <h1>common mistakes ☹️</h1>
                     <table>
                         <tr>
-                            <td>Cookies too tough</td>
-                            <td>You are overmixing dough</td>
+                            <td id="left"><b>Cookies are tough and cakey</b></td>
+                            <td id="right"><b>You are overmixing your dough!</b><br>
+                            Mixing your dough too much will cause the gluten to tense up, resulting in a tougher texture.
+                            Try mixing more gently and for a lesser amount of time.
+                            </td>
                         </tr>
 
                         <tr>
-                            <td>Cookies are burnt</td>
-                            <td>Decrease oven temperature</td>
+                            <td id="left"><b>Cookies are burnt</b></td>
+                            <td id="right"><b>Your oven temperature is too high!</b><br>
+                            Having too high of an oven temperature results in your cookies cooking too 
+                            quickly. Try reducing the temperature by 5-10 degrees.</td>
                         </tr>
 
                         <tr>
-                            <td>Cookies are burnt</td>
-                            <td>Decrease oven temperature</td>
+                            <td id="left"><b>Cookies not spreading</b></td>
+                            <td id="right"><b>Use parchment paper!</b><br>
+                            Parchment paper is a non-stick material that allows the dough to spread as it melts, 
+                            baking them on any other surface would prevent them from spreading.</td>
                         </tr>
 
                         <tr>
-                            <td>Cookies are burnt</td>
-                            <td>Decrease oven temperature</td>
+                            <td id="left"><b>Cookies too crisp for me</b></td>
+                            <td id="right"><b>Cookies have too much white sugar!</b><br>
+                            Increasing the amount of brown sugar and decreasing white sugar will make the cookies
+                            more chewy.</td>
                         </tr>
 
                         <tr>
-                            <td>Cookies are burnt</td>
-                            <td>Decrease oven temperature</td>
+                            <td id="left"><b>My cookies are too salty</b></td>
+                            <td id="right"><b>You are using too much salt!</b><br> Also check if your butter is unsalted and not salted.</td>
                         </tr>
 
 
