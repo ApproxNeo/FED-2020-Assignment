@@ -220,7 +220,8 @@ h1 {
 }
 
 #table table{
-    margin: 20px 20px 0px 50px;
+    margin: 20px 20px 0px 50px; 
+    border: dotted;
 }
 
 #left {
