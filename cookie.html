@@ -23,7 +23,7 @@
 <!--                      Section for header                   -->
         <div class="row">
             <div class="col-md-12">
-                <div w3-include-html="header.html"></div>
+                <div w3-include-html="header.html" id="header"></div>
             </div>
         </div>
 
@@ -43,7 +43,7 @@
                     </a>
                 </section>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" id="cookieimg">
                 <div class="container">
                     <img id="cookie1" class="img-fluid image"
                          src="images/cookie.jpeg" alt="cookie1">
@@ -166,14 +166,61 @@
                     </div>
 
                 </section>
-
+<!--                      Section for form            -->
                 <section id="formsection">
                     <form id="form">
                         <h2 id="header">any comments?</h2>
-                        
+                        <h3 style="font-size:15px; text-align:center;">
+                        fields marked with * are required
+                        </h3>
+
+                        <br>
+
+                        <label id="formlabel" for="star" title="text">rating</label>
+
+                        <label id="label" for="star" title="text">1⭐</label>
+                        <input name="star" id="star1" type="radio" />
 
 
+                        <label id="label" for="star" title="text">2⭐</label>
+                        <input name="star" id="star2" type="radio" />
 
+                        <label id="label" for="star" title="text">3⭐</label>
+                        <input name="star" id="star3" type="radio" />
+
+                        <label id="label" for="star" title="text">4⭐</label>
+                        <input name="star" id="star4" type="radio" />
+
+                        <label id="label" for="star" title="text">5⭐</label>
+                        <input name="star" id="star5" type="radio" />
+
+                        <br>
+
+                        <label id="formlabel" for="comment" title="text">comment*</label>
+                        <br>
+                        <textarea id="comment" name="comment"
+                                  cols="80" rows="8"
+                                  placeholder="feedback or general comments :)" required></textarea>
+
+                        <br>
+                        <label id="formlabel" for="name" title="text">name*</label>
+                        <br>
+                        <textarea id="name" name="name"
+                                  cols="80" rows="2"
+                                  placeholder="who are you" required></textarea>
+
+                        <br>
+
+                        <label id="formlabel" for="email" title="text">email*</label>
+                        <br>
+                        <input type="email" name="email" style="width:740px" required>
+
+                        <br>
+                        <br>
+
+                        <button id="submit"onclick="">Submit</button>
+
+                        <p id="output"></p>
                     </form>
                 </section>
             </div>
@@ -214,8 +261,37 @@
                     </iframe>
                 </section>
 
-                <section>
-                    <h1>insert table here</h1>
+                <section id="table">
+                    <h1>common mistakes</h1>
+                    <table>
+                        <tr>
+                            <td>Cookies too tough</td>
+                            <td>You are overmixing dough</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cookies are burnt</td>
+                            <td>Decrease oven temperature</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cookies are burnt</td>
+                            <td>Decrease oven temperature</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cookies are burnt</td>
+                            <td>Decrease oven temperature</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cookies are burnt</td>
+                            <td>Decrease oven temperature</td>
+                        </tr>
+
+
+
+                    </table>
                 </section>
             </div>
 
