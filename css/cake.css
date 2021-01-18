@@ -21,6 +21,12 @@
 .paragraph {
     margin: 10px;
 }
+
+#imageright {
+    height: 300px;
+    width: auto;
+}
+
 /*--------------------*/
 
 /*-----Types of Cake-----*/
