@@ -1,11 +1,51 @@
 ﻿body
 {
+    background-color: mediumturquoise;
 }
 
 * {
     box-sizing: border-box
 }
 
+/*-----About Cake-----*/
+.aboutCake {
+    border: dotted;
+    border-color: ghostwhite;
+    margin: 10px;
+    margin-right: -10em;
+    padding: 10px;
+}
+
+.header {
+    font-family: 'Allan', cursive;
+    margin: 10px;
+    color: floralwhite;
+}
+
+.paragraph {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: floralwhite;
+}
+
+#imageright {
+    height: 500px;
+    width: auto;
+    margin-bottom: -6.25em;
+    margin-top: -6.2em;
+    padding-right: -6.2em;
+}
+
+.col-md-6 {
+
+}
+
+#about {
+    background-color: #41B3A3;
+    padding: 100px;
+}
+/*--------------------*/
+
+/*-----Types of Cake-----*/
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -66,7 +106,7 @@
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: ghostwhite;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -89,3 +129,20 @@
     animation-duration: 1.5s;
     opacity:1;
 }
+
+/* Image */
+.image{
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#types {
+    background-color: #E8A87C;
+}
+
+#slideshow {
+    max-height: 400px;
+    width: auto;
+}
+/*-----------------------*/

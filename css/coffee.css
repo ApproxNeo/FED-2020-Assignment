@@ -3,7 +3,7 @@
     font-weight: 500;
 }
 
-main{
+#content {
     margin:auto;
     width:90%;
 }
@@ -65,7 +65,7 @@ color:white;
 }
 
 #roast-info {
-    width: 500px;
+    width: 80%;
     margin:auto;
     background-color:peachpuff;
     border:5px solid peachpuff;
@@ -85,7 +85,19 @@ color:white;
 }
 
 aside {
-    float: right;
-    padding-left: 450px;
-    max-width: 100%;
+    background-color: peachpuff;
+    border: 5px solid peachpuff;
+    border-radius: 5px;
+    padding: 20px;
+    /*padding-left: 50px;*/
+    height: 100%;
+    text-align: center;
 }
+
+/*
+#form {
+    border: 5px double peachpuff;
+    border-spacing: 5px;
+    border-radius: 5px;
+}
+*/

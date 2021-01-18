@@ -20,20 +20,19 @@
 <body>
 
     <div>
-        <!--                      Section for header                   -->
+<!--                      Section for header                   -->
         <div class="row">
             <div class="col-md-12">
-                <div w3-include-html="header.html"></div>
+                <div w3-include-html="header.html" id="header"></div>
             </div>
         </div>
 
-        <!--                      Section for content                   -->
-
-        <!--                      Section for intro                -->
+<!--                      Section for content                   -->
         <div class="row">
             <div class="col-md-6">
+<!--                      Section for intro                -->
                 <section id="intro">
-                    <h1>Cookies</h1>
+                    <h1>cookies</h1>
                     <p id="fact"><b>Did you know?</b> The first Chocolate Chip cookie was created on <b>accident!</b> </p>
                     <p id="fact">
                         Ruth Wakefield, one of the owners of Toll House Inn, added chopped chocolate to her
@@ -44,25 +43,25 @@
                     </a>
                 </section>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" id="cookieimg">
                 <div class="container">
                     <img id="cookie1" class="img-fluid image"
                          src="images/cookie.jpeg" alt="cookie1">
                     <div class="overlay">
-                        <div class="text">Chocolate Chip Cookie</div>
+                        <div class="text">chocolate chip cookie</div>
                     </div>
                 </div>
             </div>
         </div>
         <br>
-        <!--                      Section for recipe                -->
+<!--                      Section for recipe                -->
         <div class="row">
 
             <div class="col-md-6">
                 <section id="recipedetails">
-                    <h1>Recipe</h1>
-
+                    <h1>recipe</h1>
                     <div>
+<!--                      Section for ingredients               -->
                         <h2>Ingredients:</h2>
                         <ol id="ingredients">
                             <li>
@@ -103,8 +102,8 @@
 
                         </ol>
                     </div>
-
                     <div>
+<!--                      Section for instructions             -->
                         <h2>Instructions:</h2>
                         <ol id="instructions">
 
@@ -167,11 +166,69 @@
                     </div>
 
                 </section>
+<!--                      Section for form            -->
+                <section id="formsection">
+                    <form id="form">
+                        <h2 id="header">any comments?</h2>
+                        <h3 style="font-size:15px; text-align:center;">
+                        fields marked with * are required
+                        </h3>
+
+                        <br>
+
+                        <label id="formlabel" for="star" title="text">rating</label>
+
+                        <label id="label" for="star" title="text">1⭐</label>
+                        <input name="star" id="star1" type="radio" />
+
+
+                        <label id="label" for="star" title="text">2⭐</label>
+                        <input name="star" id="star2" type="radio" />
+
+                        <label id="label" for="star" title="text">3⭐</label>
+                        <input name="star" id="star3" type="radio" />
+
+                        <label id="label" for="star" title="text">4⭐</label>
+                        <input name="star" id="star4" type="radio" />
+
+                        <label id="label" for="star" title="text">5⭐</label>
+                        <input name="star" id="star5" type="radio" />
+
+                        <br>
+
+                        <label id="formlabel" for="comment" title="text">comment*</label>
+                        <br>
+                        <textarea id="comment" name="comment"
+                                  cols="80" rows="8"
+                                  placeholder="feedback or general comments :)" required></textarea>
+
+                        <br>
+                        <label id="formlabel" for="name" title="text">name*</label>
+                        <br>
+                        <textarea id="name" name="name"
+                                  cols="80" rows="2"
+                                  placeholder="who are you" required></textarea>
+
+                        <br>
+
+                        <label id="formlabel" for="email" title="text">email*</label>
+                        <br>
+                        <input type="email" name="email" style="width:740px" required>
+
+                        <br>
+                        <br>
+
+                        <button id="submit"onclick="">Submit</button>
+
+                        <p id="output"></p>
+                    </form>
+                </section>
             </div>
 
             <div class="col-md-6">
                 <section id="recipe">
-                    <h1>Crispy & Chewy Chocolate Chip Cookie 🍪</h1>
+                    <h1>crispy & chewy Chocolate Chip Cookie 🍪</h1>
+<!--                      Section for description            -->
                     <p id="recipedescription">
                         Here's the only chocolate chip cookie recipe you will ever need!
                     </p>
@@ -195,13 +252,54 @@
                         </ul>
                     </p>
                 </section>
+
+                <section id="cookievideo">
+                    <h1>a video</h1>
+                    <iframe width="750" height="506" src="https://www.youtube.com/embed/wyuec0PPz68" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                            encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </section>
+
+                <section id="table">
+                    <h1>common mistakes</h1>
+                    <table>
+                        <tr>
+                            <td>Cookies too tough</td>
+                            <td>You are overmixing dough</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cookies are burnt</td>
+                            <td>Decrease oven temperature</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cookies are burnt</td>
+                            <td>Decrease oven temperature</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cookies are burnt</td>
+                            <td>Decrease oven temperature</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cookies are burnt</td>
+                            <td>Decrease oven temperature</td>
+                        </tr>
+
+
+
+                    </table>
+                </section>
             </div>
 
         </div>
 
 
 
-        <!--                      Section for footer             -->
+<!--                      Section for footer             -->
         <div class="row">
             <div class="col-md-12 footer">
                 <div w3-include-html="footer.html"></div>
