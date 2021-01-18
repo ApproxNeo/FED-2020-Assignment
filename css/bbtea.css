@@ -172,3 +172,15 @@
     opacity:0.5;
 
 }
+
+.food{
+    padding:10px;
+}
+
+table{
+    margin:20px;
+}
+td, th{
+    font-size:24px;
+    padding:10px;
+}
