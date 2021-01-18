@@ -20,7 +20,7 @@
 
 .paragraph {
     font-family: 'Noto Sans JP', sans-serif;
-    margin: 10px;
+    margin: 10px;S
 }
 
 #imageright {
@@ -113,5 +113,12 @@
     animation-name: fade;
     animation-duration: 1.5s;
     opacity:1;
+}
+
+/* Image */
+.image{
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*-----------------------*/
