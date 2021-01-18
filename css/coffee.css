@@ -83,3 +83,21 @@ color:white;
     padding: 4px;
     max-width: 100%;
 }
+
+aside {
+    background-color: peachpuff;
+    border: 5px solid peachpuff;
+    border-radius: 5px;
+    padding: 20px;
+    /*padding-left: 50px;*/
+    height: 100%;
+    text-align: center;
+}
+
+/*
+#form {
+    border: 5px double peachpuff;
+    border-spacing: 5px;
+    border-radius: 5px;
+}
+*/
