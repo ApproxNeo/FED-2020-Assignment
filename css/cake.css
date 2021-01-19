@@ -9,26 +9,21 @@
 
 /*-----About Cake-----*/
 .aboutCake {
-    border: dotted;
-    border-color: ghostwhite;
-    border-width: 3px;
     margin-right: -10em;
-    margin-top: -5.4em;
+    margin-bottom: -20em;
     padding: 10px;
-}
-
-.historyCake {
-    border: dotted;
-    border-color: ghostwhite;
-    border-width: 3px;
-    padding: 10px;
-    
 }
 
 .header {
     font-family: 'Allan', cursive;
     margin: 10px;
     color: floralwhite;
+    font-size: 100px;
+    white-space: nowrap;
+}
+
+#box {
+    margin-top: 5em;
 }
 
 .paragraph {
@@ -37,17 +32,19 @@
     color: floralwhite;
 }
 
-#imageright {
-    border: solid;
-    border-color: ghostwhite;
-    height: 670px;
-    width: auto;
-    margin-top: -6.3em;
-    margin-bottom: -6.25em;
-    margin-left: -6.3em;
+.cite {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 10px;
+    color: floralwhite;
+    font-size: 12px;
 }
 
-#aboutHeader {
+#imageright {
+    height: 670px;
+    width: auto;
+    margin-top: -6.25em;
+    margin-bottom: -6.25em;
+    margin-left: -6.3em;
 }
 
 .col-md-6 {
@@ -55,7 +52,7 @@
 }
 
 #about {
-    background-color: #41B3A3;
+    background-color: #E27D60;
     padding: 100px;
 }
 /*--------------------*/
@@ -154,6 +151,7 @@
 
 #types {
     background-color: #E8A87C;
+    padding: 100px;
 }
 
 #slideshow {
