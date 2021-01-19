@@ -11,9 +11,18 @@
 .aboutCake {
     border: dotted;
     border-color: ghostwhite;
-    margin: 10px;
+    border-width: 3px;
     margin-right: -10em;
+    margin-top: -5.4em;
     padding: 10px;
+}
+
+.historyCake {
+    border: dotted;
+    border-color: ghostwhite;
+    border-width: 3px;
+    padding: 10px;
+    
 }
 
 .header {
@@ -29,11 +38,16 @@
 }
 
 #imageright {
-    height: 500px;
+    border: solid;
+    border-color: ghostwhite;
+    height: 670px;
     width: auto;
+    margin-top: -6.3em;
     margin-bottom: -6.25em;
-    margin-top: -6.2em;
-    padding-right: -6.2em;
+    margin-left: -6.3em;
+}
+
+#aboutHeader {
 }
 
 .col-md-6 {
@@ -43,7 +57,6 @@
 #about {
     background-color: #41B3A3;
     padding: 100px;
-    background-color: black;
 }
 /*--------------------*/
 
