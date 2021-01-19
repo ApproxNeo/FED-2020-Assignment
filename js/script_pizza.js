@@ -7,18 +7,6 @@ $("form").submit(function (event) {
 });
 
 
-
-
-//Animation on scroll for map
-var controller = new ScrollMagic.Controller();
-var scene = new ScrollMagic.Scene({
-    triggerElement: '.map-container-6 '
-})
-    .setClassToggle('.map-container-6', 'show')
-    .addTo(controller)
-
-
-
 //The aside animation
 
 var controller2 = new ScrollMagic.Controller();
