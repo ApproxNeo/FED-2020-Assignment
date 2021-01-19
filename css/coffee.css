@@ -82,22 +82,27 @@ color:white;
     border-radius: 5px;
     padding: 4px;
     max-width: 100%;
+    margin:10px 0 10px 0;
 }
 
 aside {
     background-color: peachpuff;
     border: 5px solid peachpuff;
     border-radius: 5px;
-    padding: 20px;
+    padding:5px;
     /*padding-left: 50px;*/
-    height: 100%;
     text-align: center;
+    margin: 10px 0 10px 0;
 }
 
-/*
-#form {
-    border: 5px double peachpuff;
-    border-spacing: 5px;
-    border-radius: 5px;
+aside img {
+    object-fit: cover;
+    height: 50vh;
+    width: 30vh;
 }
-*/
+
+aside p{
+    background-color:peachpuff;
+    color:black;
+}
+
