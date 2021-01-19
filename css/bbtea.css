@@ -160,13 +160,17 @@
     margin: 10px;
 }
 
-#topic{
-    background-color:antiquewhite;
-    margin:10px;
-    border:solid;
-    border-radius:10px;
-    border-color:bisque
-}
+    #recipeBlended img{
+        height:30vh;
+    }
+
+    #topic {
+        background-color: antiquewhite;
+        margin: 100px 10px 100px 10px;
+        border: solid;
+        border-radius: 10px;
+        border-color: bisque;
+    }
 
 #topic:hover{
     opacity:0.5;
@@ -183,4 +187,42 @@ table{
 td, th{
     font-size:24px;
     padding:10px;
+}
+
+#recipe{
+    border:solid;
+    border-radius: 20px;
+    padding:20px;
+    font-size:20px;
+    margin-top:20px;
+}
+
+#recipe li{
+    padding-left:20px;
+    list-style-image: none;
+    padding-bottom:8px;
+}
+
+.reason {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submission {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.survey{
+    border-radius:50px;
 }
