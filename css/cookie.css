@@ -1,6 +1,5 @@
 ﻿
 /* global styles */
-
 body {
     font-family: 'Arvo', serif;
 }
@@ -12,6 +11,13 @@ h1 {
 }
 
 /* intro styles */
+
+
+#header h1 {
+    font-family: 'Reenie Beanie', cursive;
+}
+
+
 #intro {
     padding: 25px;
     margin: 10px;
@@ -21,13 +27,14 @@ h1 {
 }
 
 #cookie1 {
-    padding: 10px;
+    padding: 5px;
     height: auto;
-    width: 500px;
+    width: 400px;
     background-color:lightpink;
     border-radius: 5px;
     margin: 5px;
 }
+
 
 .container {
     position: relative;
@@ -91,6 +98,7 @@ h1 {
     border: dotted;
     border-radius: 5px;
     border-color: lightpink;
+    width: 800px;
 }
 
 #tipslist li{
@@ -127,5 +135,99 @@ h1 {
 #coffeelink:hover {
     background-color: bisque;
     opacity: 0.8;
+}
+
+/* Video styles */
+
+#cookievideo {
+    border: dotted;
+    border-radius: 5px;
+    border-color: lightpink;
+    align-content: center;
+    margin: 10px;
+    padding: 30px;
+    width: 800px;
+}
+
+
+/* Form styles */
+
+#formsection {
+    background-color: bisque;
+    border-radius: 5px;
+    padding: 0.5px;
+    margin: 10px;
     
+    
+}
+#form {
+    background-color: lightpink;
+    border-radius: 5px;
+    border: hidden;
+    margin: 10px;
+    padding: 20px;
+    align-self: center;
+}
+
+
+#header {
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+#formlabel {
+    font-size: 20px;
+    
+}
+
+#label {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+#star {
+    margin: 0px 10px 0px 10px;
+}
+
+#submission {
+    background-color: bisque;
+    border-color: lightpink;
+}
+
+#submission:hover{
+    opacity:0.8;
+    background-color: white;
+}
+
+/* Table styles */
+
+#table h1{
+    width: 750px;
+}
+
+#table {
+    border: dotted;
+    border-radius: 5px;
+    margin: 8px;
+    padding: 20px;
+    width: 800px;
+    border-color: lightpink;
+}
+
+#table tr,th,td{
+    border: solid;
+    padding: 15px;
+}
+
+#table table{
+    margin: 20px 20px 0px 50px; 
+    border: dotted;
+}
+
+#left {
+    background-color: lightpink;
+}
+
+#right {
+    background-color: bisque;
 }

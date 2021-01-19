@@ -6,13 +6,13 @@ form{
     padding:2em;
 }
 footer {
-    font-family: verdana, sans-serif;
+    font-family: 'Arvo', serif;
     text-align: center;
     font-size: .8em;
     padding-top: 40px;
     padding-bottom: 20px;
-    
     background-color: rosybrown;
+    font-size: 20px;
 }
 
 .footer input{
