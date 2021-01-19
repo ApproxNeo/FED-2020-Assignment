@@ -201,9 +201,7 @@ input:hover {
     font-size: .8em;
     text-transform: uppercase;
 }
-.onsubmit{
-    font-size:50px;
-}
+
 
 .img-fluid {
     transition: transform .2s; /* Animation */
