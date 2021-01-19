@@ -24,6 +24,7 @@
 
 .paragraph {
     font-family: 'Noto Sans JP', sans-serif;
+    margin: 10px;
     color: floralwhite;
 }
 
@@ -42,6 +43,7 @@
 #about {
     background-color: #41B3A3;
     padding: 100px;
+    background-color: black;
 }
 /*--------------------*/
 
