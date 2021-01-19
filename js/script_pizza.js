@@ -1,6 +1,6 @@
 // JavaScript source code
 
-//Tell that you have submitted your work!
+//Tell that you have submitted your form!
 $("form").submit(function (event) {
     $("span").text("Submitted Successfully.We will get back to you within 24 hours.").show().fadeOut(6000);
     event.preventDefault();
