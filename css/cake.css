@@ -9,10 +9,8 @@
 
 /*-----About Cake-----*/
 .aboutCake {
-    border: dotted;
-    border-color: ghostwhite;
-    margin: 10px;
     margin-right: -10em;
+    margin-bottom: -20em;
     padding: 10px;
 }
 
@@ -20,6 +18,12 @@
     font-family: 'Allan', cursive;
     margin: 10px;
     color: floralwhite;
+    font-size: 100px;
+    white-space: nowrap;
+}
+
+#box {
+    margin-top: 5em;
 }
 
 .paragraph {
@@ -28,12 +32,19 @@
     color: floralwhite;
 }
 
+.cite {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 10px;
+    color: floralwhite;
+    font-size: 12px;
+}
+
 #imageright {
-    height: 500px;
+    height: 670px;
     width: auto;
+    margin-top: -6.25em;
     margin-bottom: -6.25em;
-    margin-top: -6.2em;
-    padding-right: -6.2em;
+    margin-left: -6.3em;
 }
 
 .col-md-6 {
@@ -41,9 +52,8 @@
 }
 
 #about {
-    background-color: #41B3A3;
+    background-color: #E27D60;
     padding: 100px;
-    background-color: black;
 }
 /*--------------------*/
 
@@ -138,9 +148,14 @@
     margin-left: auto;
     margin-right: auto;
 }
+.img {
+    height: 50%;
+    width: 50%;
+}
 
 #types {
     background-color: #E8A87C;
+    padding: 100px;
 }
 
 #slideshow {

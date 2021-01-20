@@ -30,98 +30,101 @@
     <!--About Cake-->
     <div class="row" id="about">
         <section>
-            <div class="aboutCake col-md-6">
-                <h2 class="header">About Cake</h2>
-                <p class="paragraph">A breadlike food made from a dough or batter that is usually fried or baked in small flat shapes and is often unleavened.</p>
-                <p class="paragraph"><cite>https://www.merriam-webster.com/dictionary/cake</cite></p>
-            </div>
-        </section>
-        
-        <section>
             <div class="col-md-6">
                 <div>
-                    <img id ="imageright" src="images/PoundCake.jpg"/>
+                    <img id="imageright" src="images/PoundCake.jpg" />
                 </div>
+            </div>
+        </section>
+        <section id="box">
+            <div class="aboutCake col-md-6" id="aboutHeader">
+                <h2 class="header">About Cake</h2>
+                <p class="paragraph">A breadlike food made from a dough or batter that is usually fried or baked in small flat shapes and is often unleavened.</p>
+                <p class="cite"><cite>https://www.merriam-webster.com/dictionary/cake</cite></p>
             </div>
         </section>
     </div>
     <!-------------->
     <!--Types of Cakes-->
     <div class="row" id="types">
-        <h2 class="header">Types of Cakes</h2>
-        <p class="paragraph">
-            There are many types of cakes, ranging from culture to culture.
-            However, this page will be focusing on the popular types of cakes.
-        </p>
-        <ul class="paragraph">
-            <li>Butter Cakes</li>
-            <!--https://12tomatoes.com/brown-butter-cake/-->
-            <li>Chiffon Cakes</li>
-            <!--https://cookingwithdog.com/recipe/chiffon-cake/-->
-            <li>Pound Cakes</li>
-            <!--https://www.onceuponachef.com/recipes/perfect-pound-cake.html-->
-            <li>Carrot Cakes</li>
-            <!--https://www.inspiredtaste.net/25753/carrot-cake-recipe/-->
-            <li>Sponge Cakes</li>
-            <!--https://www.foodinaminute.co.nz/Recipes/Easy-Butter-Sponge-Cake-->
-            <li>Red Velvet Cakes</li>
-            <!--https://www.foodnetwork.com/recipes/southern-red-velvet-cake-recipe-2011892-->
-        </ul>
+        <section>
+            <h2 class="header">Types of Cakes</h2>
+            <p class="paragraph">
+                There are many types of cakes, ranging from culture to culture.
+                However, this page will be focusing on the popular types of cakes.
+            </p>
+            <ul class="paragraph">
+                <li>Butter Cakes</li>
+                <!--https://in.pinterest.com/pin/92042386122529194/-->
+                <li>Chiffon Cakes</li>
+                <!--https://cookingwithdog.com/recipe/chiffon-cake/-->
+                <li>Pound Cakes</li>
+                <!--https://www.pinterest.jp/pin/212865519864314442/-->
+                <li>Carrot Cakes</li>
+                <!--https://www.inspiredtaste.net/25753/carrot-cake-recipe/-->
+                <li>Sponge Cakes</li>
+                <!--https://www.foodinaminute.co.nz/Recipes/Easy-Butter-Sponge-Cake-->
+                <li>Red Velvet Cakes</li>
+                <!--https://www.foodnetwork.com/recipes/southern-red-velvet-cake-recipe-2011892-->
+            </ul>
+        </section>
         <!-- Slideshow-->
-        <div class="slideshow-container" id="slideshow">
+        <section>
+            <div class="slideshow-container" id="slideshow">
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fades">
-                <div class="numbertext">1 / 6</div>
-                <img class="img" src="images/ButterCake.jpg" style="max-height:400px">
-                <div class="text">Butter Cake</div>
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fades">
+                    <div class="numbertext">1 / 6</div>
+                    <img class="img" src="images/ButterCake.jpg">
+                    <div class="text">Butter Cake</div>
+                </div>
+
+                <div class="mySlides fades">
+                    <div class="numbertext">2 / 6</div>
+                    <img class="img" src="images/ChiffonCake.jpg" style="max-height:400px">
+                    <div class="text">Chiffon Cakes</div>
+                </div>
+
+                <div class="mySlides fades">
+                    <div class="numbertext">3 / 6</div>
+                    <img class="img" src="images/PoundCake.jpg" style="max-height:400px">
+                    <div class="text">Pound Cake</div>
+                </div>
+
+                <div class="mySlides fades">
+                    <div class="numbertext">4 / 6</div>
+                    <img class="img" src="images/CarrotCake.jpg" style="max-height:400px">
+                    <div class="text">Carrot Cake</div>
+                </div>
+
+                <div class="mySlides fades">
+                    <div class="numbertext">5 / 6</div>
+                    <img class="img" src="images/SpongeCake.jpg" style="max-height:400px">
+                    <div class="text">Sponge Cake</div>
+                </div>
+
+                <div class="mySlides fades">
+                    <div class="numbertext">6 / 6</div>
+                    <img class="img" src="images/RedVelvetCake.jpeg" style="max-height: 400px">
+                    <div class="text">Red Velvet Cake</div>
+                </div>
+
+                <!-- Next & Prev -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+            <br>
 
-            <div class="mySlides fades">
-                <div class="numbertext">2 / 6</div>
-                <img class="img" src="images/ChiffonCake.jpg" style="max-height:400px">
-                <div class="text">Chiffon Cakes</div>
+            <!-- Dots -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
             </div>
-
-            <div class="mySlides fades">
-                <div class="numbertext">3 / 6</div>
-                <img class="img" src="images/PoundCake.jpg" style="max-height:400px">
-                <div class="text">Pound Cake</div>
-            </div>
-
-            <div class="mySlides fades">
-                <div class="numbertext">4 / 6</div>
-                <img class="img" src="images/CarrotCake.jpg" style="max-height:400px">
-                <div class="text">Carrot Cake</div>
-            </div>
-
-            <div class="mySlides fades">
-                <div class="numbertext">5 / 6</div>
-                <img class="img" src="images/SpongeCake.jpg" style="max-height:400px">
-                <div class="text">Sponge Cake</div>
-            </div>
-
-            <div class="mySlides fades">
-                <div class="numbertext">6 / 6</div>
-                <img class="img" src="images/RedVelvetCake.jpeg" style="max-height: 400px">
-                <div class="text">Red Velvet Cake</div>
-            </div>
-
-            <!-- Next & Prev -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <!-- Dots -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-        </div>
+        </section>
     </div>
         <!------------------>
     <div class="row">
