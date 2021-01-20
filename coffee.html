@@ -51,10 +51,8 @@
                 <!--roast profiles div-->
                 <div class="col-sm-12">
                     <div id="roasts">
-                        <h5>How would you like your coffee?</h5>
-                        <figure>
-                            <img src="images/coffee-images/roasts.jpg" />
-                        </figure>
+                        <h5>☕How would you like your coffee?☕</h5>
+                        <img src="images/coffee-images/roasts.jpg" />
                         <button onclick="lightInfo()" id="light" type="button">Light</button>
                         <button onclick="medInfo()" id="medium" type="button">Medium</button>
                         <button onclick="darkInfo()" id="dark" type="button">Dark</button>
@@ -126,16 +124,10 @@
 
             <!--r2-->
             <div class="row">
-                <!--recipe, r2,c1-->
-                <div class="col-sm-6">
-                    
-                </div>
-
-                <!--r2c2-->
-                <div class="col-sm-6" id="recipe">
+                <div class="col-sm-12" id="recipe">
                     <main>
                         <h5>Discover your favourite drink</h5>
-                        <p>Try this simple, yet flavourful latte recipe!</p>
+                        <p>Try this simple, yet flavourful <b>latte</b> recipe!</p>
                         <br />
                         <i>Requirements: </i>
                         <ul>
@@ -160,21 +152,84 @@
                         </ol>
                     </main>
                 </div>
+            </div>
+
+            <hr />
+            <div class="row">
+                <div class="col-sm-6">
+                    <form id="order">
+                        <h5>Order your favourite coffee bean!</h5>
+                        <b><label for="origin">Origin</label></b>
+                        <select id="origin" name="origin" required onchange="">
+                            <option value="columbia" selected>Columbia</option>
+                            <option value="kenya">Kenya</option>
+                            <option value="ethiopia">Ethiopia</option>
+                            <option value="sumatra">Sumatra</option>
+                            <option value="guatemala">Guatemala</option>
+                        </select>
+
+                        <br />
+                        <fieldset required>
+                            <b><label for="type">Type</label></b>
+                            <input type="checkbox" name="type" class="type" value="Arabica" /> Arabica
+                            <input type="checkbox" name="type" class="type" value="Robusta" /> Robusta
+                        </fieldset>
+
+                        <b><label for="amount">Amount</label></b>
+                        <input type="number" id="amount" name="amount" min="250" max="750" step="250" />g
+
+                        <br />
+                        <div id="button">
+                            <button type="submit">Order🛒</button>
+                        </div>
+                    </form>
                 </div>
 
-                <br />
+                <div class="col-sm-6">
+                    <aside>
+                        <table style="caption-side:top">
+                            <b><tcaption>Coffee Origins</tcaption></b>
+                            <tr>
+                                <th>Origin</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <th>Columbia</th>
+                                <th>Columbian beans have a mellow acdity and strong caramel sweetness, with a nutty undertone.</th>
+                            </tr>
+                            <tr>
+                                <th>Kenya</th>
+                                <th>Kenyan coffee has a rich taste, with a wine-like taste and has tones of fruit and berry. <b>Recommended</b> if you're a new coffee drinker!</th>
+                            </tr>
+                            <tr>
+                                <th>Ethiopia</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th>Sumatra</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th>Guatemala</th>
+                                <th></th>
+                            </tr>
+                        </table>
+                    </aside>
+                </div>
+            </div>
+                    <br />
 
+                </div>
+
+
+                <div class="col-sm-12 footer">
+                    <div w3-include-html="footer.html"></div>
+                </div>
             </div>
 
-
-            <div class="col-sm-12 footer">
-                <div w3-include-html="footer.html"></div>
-            </div>
-        </div>
-
-    <script>
-        w3.includeHTML();
-    </script>
+            <script>
+                w3.includeHTML();
+            </script>
 
 </body>
 </html>
