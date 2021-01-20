@@ -86,6 +86,10 @@ color:white;
     margin:10px 0 10px 0;
 }
 
+#req{
+    border:2px dotted saddlebrown;
+}
+
 aside {
     background-color: peachpuff;
     border: 5px solid peachpuff;
@@ -136,6 +140,7 @@ form button{
 table, tr, th{
     border:2px solid black;
     font-weight:400;
+    padding:3px;
 }
 
 table #theader{

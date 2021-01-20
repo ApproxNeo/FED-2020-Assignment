@@ -31,7 +31,7 @@
             document.getElementById('roast-info').innerHTML = 'Dark roast coffee contains the least amount of caffeine in the roast profile spectrum, and are the least acidic. The flavour of the dark roast can be best described as the flavour most people associate with coffee.';
         }
 
-        
+        //to do, 20/01/2021: add JS for form
     </script>
 
     <div class="container-fluid">
@@ -44,6 +44,9 @@
             </div>
 
         </div>
+
+        <!--to do, 20/01/2021: fix navbar under image issue-->
+
             <!--main content-->
         <div id="content">
 
@@ -58,7 +61,7 @@
                         <button onclick="darkInfo()" id="dark" type="button">Dark</button>
                         <div id="roast-caption">
                             <p id="roast-info">click on the beans to learn about different roast profiles!</p>
-                            <a style="background-color:lightgray;color:black" href="#order">Buy some coffee🛍️</a>
+                            <a style="background-color:saddlebrown;color:white;padding:2px" href="#order">Buy some coffee🛍️</a>
                         </div>
                         <hr />
                     </div>
@@ -139,26 +142,29 @@
                         <h5>Discover your favourite drink</h5>
                         <p>Try this simple, yet flavourful <b>latte</b> recipe!</p>
                         <br />
-                        <i>Requirements: </i>
-                        <ul>
-                            <li>Your most reliable espresso machine</li>
-                            <li>A steaming wand</li>
-                            <li>Coffee grounds (if grinding at home, remember to use the right setting)</li>
-                            <li>A pitcher</li>
-                            <li>Your favourite coffee mug (or tea, we don't gatekeep here!)</li>
-                            <li>Your favourite dairy alternative milk (almond or oat is recommended)</li>
-                        </ul>
+                        <div id="req">
+                            <i>Requirements: </i>
+                            <ul>
+                                <li>Your most reliable espresso machine</li>
+                                <li>A steaming wand</li>
+                                <li>Coffee grounds (if grinding at home, remember to use the right setting)</li>
+                                <li>A pitcher</li>
+                                <li>Your favourite coffee mug☕ (or tea, we don't gatekeep here!)</li>
+                                <li>Your favourite dairy alternative milk🥛 (almond or oat is recommended)</li>
+                            </ul>
+                        </div>
                         <br />
+                        
                         <p>The recipe</p>
                         <ol>
-                            <li>Pour some milk into your pitcher, depending on your mug size. Make sure to leave a little space for foam.</li>
-                            <li>Dip the steaming wand into the pitcher, and begin steaming. Raise the tip of the wand to the top of the milk (still submerged), and aerate for a count of two.</li>
+                            <li>Pour some milk into your pitcher, depending on your mug size. <i>Make sure to leave a little space for foam</i>.</li>
+                            <li>Dip the steaming wand into the pitcher, and begin steaming. Raise the tip of the wand to the top of the milk (still submerged), and <b>aerate</b> for a count of <b>two</b>⏲️.</li>
                             <li>Lower the tip back into the milk, and let milk reach 64 degrees celcius.</li>
-                            <li>While waiting for the milk, use your trusty espresso machine and pull a shot or two of espresso, depending on the amount of caffeine you require.</li>
+                            <li>While waiting for the milk, use your trusty espresso machine and pull a shot (or two!) of espresso, depending on the amount of caffeine you require.</li>
                             <li>When the milk and espresso are both ready, pour the shots into your mug.</li>
                             <li>Make sure the milk's surface is smooth and not bubbly or too foamy. In the case of excess foam, scoop some out with a spoon and swirl your milk in its pitcher to get the bubbles out.</li>
-                            <li>Combine the milk with the espresso- when experienced enough, practise your latte art and create a simple heart!</li>
-                            <li>Enjoy your hot, creamy latte with some of these delicious <a id="cookielink" href="cookie.html#recipe">chocolate chip cookies</a>.</li>
+                            <li>Combine the milk with the espresso- when experienced enough, practise your latte art and create a simple heart❤️</li>
+                            <li>Enjoy your hot, creamy latte with some of these delicious <a id="cookielink" href="cookie.html#recipe">chocolate chip cookies</a>!</li>
                         </ol>
                     </main>
                 </div>
