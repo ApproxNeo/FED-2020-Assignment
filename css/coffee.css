@@ -15,8 +15,8 @@
 
 #roasts h5 {
     margin-top:5px;
-    background-color: pink;
-    border: 5px solid pink;
+    background-color: peachpuff;
+    border: 5px solid peachpuff;
     border-radius: 5px;
 }
 
@@ -68,8 +68,8 @@ color:white;
 #roast-info {
     width: 80%;
     margin:auto;
-    background-color:pink;
-    border:5px solid pink;
+    background-color:peachpuff;
+    border:5px solid peachpuff;
     border-radius:5px;
 }
 
@@ -78,7 +78,7 @@ color:white;
 }
 
 #recipe {
-    border: 5px double pink;
+    border: 5px double peachpuff;
     border-spacing: 5px;
     border-radius: 5px;
     padding: 4px;
@@ -87,8 +87,8 @@ color:white;
 }
 
 aside {
-    background-color: pink;
-    border: 5px solid pink;
+    background-color: peachpuff;
+    border: 5px solid peachpuff;
     border-radius: 5px;
     padding:4px;
     /*padding-left: 50px;*/
@@ -98,18 +98,18 @@ aside {
 
 aside img {
     object-fit: cover;
-    height: 60vh;
+    height: 70vh;
     width: auto;
 }
 
 aside p{
-    background-color:pink;
+    background-color:peachpuff;
     color:black;
 }
 
 #order{
-    background-color: pink;
-    border: 5px solid pink;
+    background-color: peachpuff;
+    border: 5px solid peachpuff;
     border-radius: 5px;
     padding: 5px;
     margin: 10px 0 10px 0;
@@ -125,6 +125,10 @@ form #button {
     padding:5px;
 }
 
+form label{
+    font-weight:bold;
+}
+
 form button{
     text-align:center;
 }
@@ -132,5 +136,22 @@ form button{
 table, tr, th{
     border:2px solid black;
     font-weight:400;
+}
+
+table #theader{
+    background-color:orange;
+}
+
+table #one{
+    background-color:peachpuff;
+}
+
+table #two{
+    background-color:white;
+}
+
+#credits{
+    font-size:1.5vh;
+    line-height:2vh;
 }
 

@@ -58,6 +58,7 @@
                         <button onclick="darkInfo()" id="dark" type="button">Dark</button>
                         <div id="roast-caption">
                             <p id="roast-info">click on the beans to learn about different roast profiles!</p>
+                            <a style="background-color:lightgray;color:black" href="#order">Buy some coffee🛍️</a>
                         </div>
                         <hr />
                     </div>
@@ -69,12 +70,21 @@
                 <!--tips, r1c1-->
                 <div class="col-sm-6" id="recipe">
                     <main>
-                        <h5>Pro tips for home brewing</h5>
+                        <h5>Pro tips for making coffee at home!!</h5>
                         <ul>
                             <li>
                                 <b>Know your grind sizes.</b> Different coffee brewing contraptions require different coffee ground sizes in order to
                                 extract them perfectly. Grind sizes range from fine (eg. Turkish) to coarse (eg. French Press). If unsure about the
                                 size of grind your machine requires, ask your friendly local coffee shop!
+                            </li>
+                            <li>
+                                <b>Pay attention to temperature.</b> The temperature at which you brew your coffee can cause your coffee beans to be over- or under-extracted.
+                            </li>
+                            <li>
+                                <b>Pay attention to your espresso pull time.</b> If your espresso takes too long to pull, or is too fast, you may want to start over again. If the problem persists, check your machine.
+                            </li>
+                            <li>
+                                <b></b>
                             </li>
                         </ul>
                     </main>
@@ -159,7 +169,7 @@
                 <div class="col-sm-6">
                     <form id="order">
                         <h5>Order your favourite coffee bean!</h5>
-                        <b><label for="origin">Origin</label></b>
+                        <label for="origin">Origin</label>
                         <select id="origin" name="origin" required onchange="">
                             <option value="columbia" selected>Columbia</option>
                             <option value="kenya">Kenya</option>
@@ -170,14 +180,30 @@
 
                         <br />
                         <fieldset required>
-                            <b><label for="type">Type</label></b>
+                            <label for="type">Type</label>
                             <input type="checkbox" name="type" class="type" value="Arabica" /> Arabica
                             <input type="checkbox" name="type" class="type" value="Robusta" /> Robusta
                         </fieldset>
 
-                        <b><label for="amount">Amount</label></b>
+                        <label for="amount">Amount</label>
                         <input type="number" id="amount" name="amount" min="250" max="750" step="250" />g
 
+                        <br />
+                        <label for="phone">Phone #</label>
+                        <input type="tel" name="phone" pattern="[0-9]{8}" required />
+
+                        <br />
+                        <label for="date">Delivery Date</label>
+                        <input type="date" name="date" max="2020-12-30" min="2020-11-01" required />
+
+                        <br />
+                        <label for="address">Delivery Address:</label>
+                        <textarea name="address" rows="2" cols="20" required></textarea>
+
+                        <br />
+                        <label for="code">Postal Code:</label>
+                        <input type="text" id="code" name="code" pattern="[0-9]{6}" onchange="onSubmit()" />
+                        
                         <br />
                         <div id="button">
                             <button type="submit">Order🛒</button>
@@ -189,37 +215,49 @@
                     <aside>
                         <table style="caption-side:top">
                             <b><tcaption>Coffee Origins</tcaption></b>
-                            <tr>
+                            <tr id="theader">
                                 <th>Origin</th>
                                 <th>Description</th>
                             </tr>
-                            <tr>
+                            <tr id="one">
                                 <th>Columbia</th>
                                 <th>Columbian beans have a mellow acdity and strong caramel sweetness, with a nutty undertone.</th>
                             </tr>
-                            <tr>
+                            <tr id="two">
                                 <th>Kenya</th>
                                 <th>Kenyan coffee has a rich taste, with a wine-like taste and has tones of fruit and berry. <b>Recommended</b> if you're a new coffee drinker!</th>
                             </tr>
-                            <tr>
+                            <tr id="one">
                                 <th>Ethiopia</th>
-                                <th></th>
+                                <th>Ethiopian coffees have floral, herbal and citrus tasting notes. It has mild acidity and is not too strong a body- making it a favourite of many.</th>
                             </tr>
-                            <tr>
+                            <tr id="two">
                                 <th>Sumatra</th>
-                                <th></th>
+                                <th>Sumatran coffee is known for its earthy tones, and its low acidity. <i>Sumatra was actually one of the first few places to start growing coffee on a large scale!</i></th>
                             </tr>
-                            <tr>
+                            <tr id="one">
                                 <th>Guatemala</th>
-                                <th></th>
+                                <th>Guatemalan coffee (the nicest, this is non-negotiable) has chocolatey favour notes, and is notably sweet. It has a medium to full body.</th>
                             </tr>
                         </table>
                     </aside>
                 </div>
             </div>
-                    <br />
-
-                </div>
+            
+        <hr />
+        <div id="credits">
+            <p>Credits</p>
+            <p>Information:</p>
+            <a href="https://espressocoffeeguide.com/gourmet-coffee/arabian-and-african-coffees/kenya-coffee/">kenyan coffee info</a>
+            <a href="https://www.cradlecoffee.co.za/product/colombian/#:~:text=Description,flavour%20to%20most%20North%20Americans."> | columbian coffee info</a>
+            <a href="https://en.wikipedia.org/wiki/Coffee_production_in_Ethiopia#:~:text=Harar%20is%20in%20the%20Eastern,its%20distinctive%20fruity%2C%20wine%20flavour.&text=It%20has%20medium%20acidity%20and,done%20almost%20entirely%20by%20hand."> | ethiopian coffee info</a>
+            <a href="https://espressocoffeeguide.com/gourmet-coffee/asian-indonesian-and-pacific-coffees/indonesia-coffee/sumatra-coffee/"> | sumatran coffee info</a>
+            <a href="https://www.homegrounds.co/guatemalan-coffee/"></a>
+            <p>Images:</p>
+            <p><a href="https://unsplash.com/">Unsplash. </a>All images free for use. </p>
+        </div>
+        <br />
+        </div>
 
 
                 <div class="col-sm-12 footer">
