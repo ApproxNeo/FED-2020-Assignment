@@ -15,24 +15,12 @@
     <link rel="stylesheet" href="css/coffee.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
+    <!--script-->
+    <script src="js/coffee.js"></script>
 </head>
 
 <body onload="fadeImage(3);">
-    <script>
-        function lightInfo() {
-            document.getElementById('roast-info').innerHTML = 'Light, or Blonde roast coffee, is a mellow-tasting coffee that may have tasting notes of fruit, or nuts. Light roast coffees have a high acidity, and their light colour is due to being roasted for a shorter period of time. This is also the reason why light roast coffee has the highest caffeine content among the roast profiles.';
-        }
-
-        function medInfo() {
-            document.getElementById('roast-info').innerHTML = 'Medium roast coffees are less acidic than light roast coffees, as they have been roasted for longer. The flavours of a medium roast coffee may resemble caramel, and these roasts tend to be more popular among coffee drinkers.';
-        }
-
-        function darkInfo() {
-            document.getElementById('roast-info').innerHTML = 'Dark roast coffee contains the least amount of caffeine in the roast profile spectrum, and are the least acidic. The flavour of the dark roast can be best described as the flavour most people associate with coffee.';
-        }
-
-        //to do, 20/01/2021: add JS for form
-    </script>
+    
 
     <div class="container-fluid">
         
@@ -85,9 +73,6 @@
                             </li>
                             <li>
                                 <b>Pay attention to your espresso pull time.</b> If your espresso takes too long to pull, or is too fast, you may want to start over again. If the problem persists, check your machine.
-                            </li>
-                            <li>
-                                <b></b>
                             </li>
                         </ul>
                     </main>
@@ -177,11 +162,11 @@
                         <h5>Order your favourite coffee bean!</h5>
                         <label for="origin">Origin</label>
                         <select id="origin" name="origin" required onchange="">
-                            <option value="columbia" selected>Columbia</option>
-                            <option value="kenya">Kenya</option>
-                            <option value="ethiopia">Ethiopia</option>
-                            <option value="sumatra">Sumatra</option>
-                            <option value="guatemala">Guatemala</option>
+                            <option class="origin" name="origin" value="columbia" selected>Columbia</option>
+                            <option class="origin" name="origin" value="kenya">Kenya</option>
+                            <option class="origin" name="origin" value="ethiopia">Ethiopia</option>
+                            <option class="origin" name="origin" value="sumatra">Sumatra</option>
+                            <option class="origin" name="origin" value="guatemala">Guatemala</option>
                         </select>
 
                         <br />
@@ -189,31 +174,33 @@
                             <label for="type">Type</label>
                             <input type="checkbox" name="type" class="type" value="Arabica" /> Arabica
                             <input type="checkbox" name="type" class="type" value="Robusta" /> Robusta
+                            <p id="type-error"></p>
                         </fieldset>
 
                         <label for="amount">Amount</label>
                         <input type="number" id="amount" name="amount" min="250" max="750" step="250" />g
+                        <p id="amt-error"></p>
 
-                        <br />
                         <label for="phone">Phone #</label>
-                        <input type="tel" name="phone" pattern="[0-9]{8}" required />
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" required />
+                        <p id="phone-error"></p>
 
-                        <br />
                         <label for="date">Delivery Date</label>
-                        <input type="date" name="date" max="2020-12-30" min="2020-11-01" required />
+                        <input type="date" name="date" max="2020-12-30" min="2020-11-01" value = "2020-12-12" required />
 
                         <br />
                         <label for="address">Delivery Address:</label>
-                        <textarea name="address" rows="2" cols="20" required></textarea>
-
+                        <textarea name="address" id="addr" rows="2" cols="20" required></textarea>
+                        <p id="addr-error"></p>
                         <br />
                         <label for="code">Postal Code:</label>
-                        <input type="text" id="code" name="code" pattern="[0-9]{6}" onchange="onSubmit()" />
-                        
-                        <br />
+                        <input type="text" id="code" name="code" pattern="[0-9]{6}"/>
+                        <p id="code-error"></p>
+
                         <div id="button">
-                            <button type="submit">Order🛒</button>
+                            <button onclick="output()" type="button">Order🛒</button>
                         </div>
+                        <p id="output-message"></p>
                     </form>
                 </div>
 
