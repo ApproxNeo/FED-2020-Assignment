@@ -1,4 +1,6 @@
-﻿body
+﻿/*----- Constant -----*/
+
+body
 {
     background-color: mediumturquoise;
 }
@@ -7,11 +9,10 @@
     box-sizing: border-box
 }
 
-/*-----About Cake-----*/
-.aboutCake {
-    margin-right: -10em;
-    margin-bottom: -20em;
-    padding: 10px;
+.paragraph {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 10px;
+    color: floralwhite;
 }
 
 .header {
@@ -22,16 +23,6 @@
     white-space: nowrap;
 }
 
-#box {
-    margin-top: 5em;
-}
-
-.paragraph {
-    font-family: 'Noto Sans JP', sans-serif;
-    margin: 10px;
-    color: floralwhite;
-}
-
 .cite {
     font-family: 'Noto Sans JP', sans-serif;
     margin: 10px;
@@ -39,7 +30,20 @@
     font-size: 12px;
 }
 
-#imageright {
+
+#box {
+    margin-top: 5em;
+}
+
+
+/*----- 1.About Cake -----*/
+.aboutCake {
+    margin-right: -10em;
+    margin-bottom: -20em;
+    padding: 10px;
+}
+
+#imageleft {
     height: 670px;
     width: auto;
     margin-top: -6.25em;
@@ -57,7 +61,28 @@
 }
 /*--------------------*/
 
-/*-----Types of Cake-----*/
+/*----- 2. History of Cake -----*/
+
+.historyCake {
+    padding: 10px;
+    margin-left: -10em;
+    margin-bottom: -20em;
+}
+
+#history {
+    background-color: black;
+    padding: 100px;
+}
+
+#imageright {
+    height: 670px;
+    width: auto;
+}
+
+/*------------------------------*/
+
+/*----- 3. Types of Cake -----*/
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
