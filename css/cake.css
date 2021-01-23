@@ -149,8 +149,8 @@
     margin-right: auto;
 }
 .img {
-    height: 50%;
-    width: 50%;
+    height: 75%;
+    width: 75%;
 }
 
 #types {
@@ -159,7 +159,6 @@
 }
 
 #slideshow {
-    max-height: 400px;
-    width: auto;
+    margin-right: 50px;
 }
 /*-----------------------*/

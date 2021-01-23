@@ -43,6 +43,7 @@ color:white;
     text-align: center;
     text-decoration: none;
     box-shadow:0px 0px 10px white;
+    font-weight:600;
 }
 
 #light {
@@ -85,11 +86,15 @@ color:white;
     margin:10px 0 10px 0;
 }
 
+#req{
+    border:2px dotted saddlebrown;
+}
+
 aside {
     background-color: peachpuff;
     border: 5px solid peachpuff;
     border-radius: 5px;
-    padding:5px;
+    padding:4px;
     /*padding-left: 50px;*/
     text-align: center;
     margin: 10px 0 10px 0;
@@ -97,12 +102,61 @@ aside {
 
 aside img {
     object-fit: cover;
-    height: 50vh;
-    width: 30vh;
+    height: 70vh;
+    width: auto;
 }
 
 aside p{
     background-color:peachpuff;
     color:black;
+}
+
+#order{
+    background-color: peachpuff;
+    border: 5px solid peachpuff;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0 10px 0;
+}
+
+form h5{
+    text-align:center;
+}
+
+form #button {
+    text-align:center;
+    margin:auto;
+    padding:5px;
+}
+
+form label{
+    font-weight:bold;
+}
+
+form button{
+    text-align:center;
+}
+
+table, tr, th{
+    border:2px solid black;
+    font-weight:400;
+    padding:3px;
+}
+
+table #theader{
+    background-color:orange;
+}
+
+table #one{
+    background-color:peachpuff;
+}
+
+table #two{
+    background-color:white;
+}
+
+#credits{
+    font-size:1.5vh;
+    line-height:2vh;
 }
 
