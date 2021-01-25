@@ -44,7 +44,7 @@ body
 }
 
 #imageleft {
-    width: 1000px;
+    width: 960px;
     margin-top: -6.25em;
     margin-bottom: -6.25em;
     margin-left: -6.3em;
@@ -64,8 +64,8 @@ body
 
 .historyCake {
     padding: 10px;
-    margin-left: -10em;
     margin-bottom: -20em;
+
 }
 
 #history {
@@ -74,10 +74,9 @@ body
 }
 
 #imageright {
-    width: 500px;
+    width: 960px;
     margin-top: -6.25em;
     margin-bottom: -6.25em;
-    margin-left: -6.3em;
 }
 
 /*------------------------------*/
