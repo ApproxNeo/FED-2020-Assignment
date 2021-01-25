@@ -205,6 +205,10 @@ h1 {
     width: 750px;
 }
 
+#table td{
+    font-size: 15px;
+}
+
 #table {
     border: dotted;
     border-radius: 5px;
