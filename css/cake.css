@@ -30,17 +30,13 @@ body
     font-size: 12px;
 }
 
-
-#box {
-    margin-top: 5em;
-}
-
 /*----- 1.About Cake -----*/
 .aboutCake {
     margin-right: -15em;
     margin-bottom: -20em;
     padding: 10px;
     padding-left: 40px;
+    margin-left: 50px;
 }
 
 #imageleft {
@@ -77,6 +73,7 @@ body
     width: 960px;
     margin-top: -6.25em;
     margin-bottom: -6.25em;
+    padding-right: 10px;
 }
 
 /*------------------------------*/
