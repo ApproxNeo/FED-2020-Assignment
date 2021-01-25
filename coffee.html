@@ -13,22 +13,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--css-->
     <link rel="stylesheet" href="css/coffee.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
+    <!--script-->
+    <script src="js/coffee.js"></script>
 </head>
 
-<body>
-    <script>
-        function lightInfo() {
-            document.getElementById('roast-info').innerHTML = 'Light, or Blonde roast coffee, is a mellow-tasting coffee that may have tasting notes of fruit, or nuts. Light roast coffees have a high acidity, and their light colour is due to being roasted for a shorter period of time. This is also the reason why light roast coffee has the highest caffeine content among the roast profiles.';
-        }
-
-        function medInfo() {
-            document.getElementById('roast-info').innerHTML = 'Medium roast coffees are less acidic than light roast coffees, as they have been roasted for longer. The flavours of a medium roast coffee may resemble caramel, and these roasts tend to be more popular among coffee drinkers.';
-        }
-
-        function darkInfo() {
-            document.getElementById('roast-info').innerHTML = 'Dark roast coffee contains the least amount of caffeine in the roast profile spectrum, and are the least acidic. The flavour of the dark roast can be best described as the flavour most people associate with coffee.';
-        }
-    </script>
+<body onload="fadeImage(3);">
+    
 
     <div class="container-fluid">
         
@@ -40,6 +32,9 @@
             </div>
 
         </div>
+
+        <!--to do, 20/01/2021: fix navbar under image issue-->
+
             <!--main content-->
         <div id="content">
 
@@ -47,89 +42,226 @@
                 <!--roast profiles div-->
                 <div class="col-sm-12">
                     <div id="roasts">
-                        <h5>How would you like your coffee?</h5>
-                        <figure>
-                            <img src="images/coffee-images/roasts.jpg" />
-                        </figure>
+                        <h5>☕How would you like your coffee?☕</h5>
+                        <img src="images/coffee-images/roasts.jpg" />
                         <button onclick="lightInfo()" id="light" type="button">Light</button>
                         <button onclick="medInfo()" id="medium" type="button">Medium</button>
                         <button onclick="darkInfo()" id="dark" type="button">Dark</button>
                         <div id="roast-caption">
                             <p id="roast-info">click on the beans to learn about different roast profiles!</p>
+                            <a style="background-color:saddlebrown;color:white;padding:2px" href="#order">Buy some coffee🛍️</a>
                         </div>
                         <hr />
                     </div>
                 </div>
             </div>
 
+            <!--r1-->
             <div class="row">
-                <div class="col-sm-8" id="recipe">
+                <!--tips, r1c1-->
+                <div class="col-sm-6" id="recipe">
                     <main>
-                        <h5>Pro tips for home brewing</h5>
+                        <h5>Pro tips for making coffee at home!!</h5>
                         <ul>
                             <li>
                                 <b>Know your grind sizes.</b> Different coffee brewing contraptions require different coffee ground sizes in order to
                                 extract them perfectly. Grind sizes range from fine (eg. Turkish) to coarse (eg. French Press). If unsure about the
                                 size of grind your machine requires, ask your friendly local coffee shop!
                             </li>
+                            <li>
+                                <b>Pay attention to temperature.</b> The temperature at which you brew your coffee can cause your coffee beans to be over- or under-extracted.
+                            </li>
+                            <li>
+                                <b>Pay attention to your espresso pull time.</b> If your espresso takes too long to pull, or is too fast, you may want to start over again. If the problem persists, check your machine.
+                            </li>
                         </ul>
                     </main>
                 </div>
 
-                <div class="col-sm-4" id="form">
+                <!--slideshow, r1c2-->
+                <div class="col-sm-6">
                     <aside>
-                        <h5>placeholder text this is some sort of form/quiz</h5>
-                        <p>yes</p>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/coffee-images/flat-filter.jpg" alt="flat filter coffee">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>flat filter coffee</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/index-slideshow/coffee.jpg" alt="cone filter">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>cone filter coffee</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/coffee-images/french-press.jpg" alt="french press">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p>french press</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </aside>
                 </div>
             </div>
 
-            <br />
-
+            <!--r2-->
             <div class="row">
-                <div class="col-sm-8" id="recipe">
+                <div class="col-sm-12" id="recipe">
                     <main>
                         <h5>Discover your favourite drink</h5>
-                        <p>Try this simple, yet flavourful latte recipe!</p>
+                        <p>Try this simple, yet flavourful <b>latte</b> recipe!</p>
                         <br />
-                        <i>Requirements: </i>
-                        <ul>
-                            <li>Your most reliable espresso machine</li>
-                            <li>A steaming wand</li>
-                            <li>Coffee grounds (if grinding at home, remember to use the right setting)</li>
-                            <li>A pitcher</li>
-                            <li>Your favourite coffee mug (or tea, we don't gatekeep here!)</li>
-                            <li>Your favourite dairy alternative milk (almond or oat is recommended)</li>
-                        </ul>
+                        <div id="req">
+                            <i>Requirements: </i>
+                            <ul>
+                                <li>Your most reliable espresso machine</li>
+                                <li>A steaming wand</li>
+                                <li>Coffee grounds (if grinding at home, remember to use the right setting)</li>
+                                <li>A pitcher</li>
+                                <li>Your favourite coffee mug☕ (or tea, we don't gatekeep here!)</li>
+                                <li>Your favourite dairy alternative milk🥛 (almond or oat is recommended)</li>
+                            </ul>
+                        </div>
                         <br />
+                        
                         <p>The recipe</p>
                         <ol>
-                            <li>Pour some milk into your pitcher, depending on your mug size. Make sure to leave a little space for foam.</li>
-                            <li>Dip the steaming wand into the pitcher, and begin steaming. Raise the tip of the wand to the top of the milk (still submerged), and aerate for a count of two.</li>
+                            <li>Pour some milk into your pitcher, depending on your mug size. <i>Make sure to leave a little space for foam</i>.</li>
+                            <li>Dip the steaming wand into the pitcher, and begin steaming. Raise the tip of the wand to the top of the milk (still submerged), and <b>aerate</b> for a count of <b>two</b>⏲️.</li>
                             <li>Lower the tip back into the milk, and let milk reach 64 degrees celcius.</li>
-                            <li>While waiting for the milk, use your trusty espresso machine and pull a shot or two of espresso, depending on the amount of caffeine you require.</li>
+                            <li>While waiting for the milk, use your trusty espresso machine and pull a shot (or two!) of espresso, depending on the amount of caffeine you require.</li>
                             <li>When the milk and espresso are both ready, pour the shots into your mug.</li>
                             <li>Make sure the milk's surface is smooth and not bubbly or too foamy. In the case of excess foam, scoop some out with a spoon and swirl your milk in its pitcher to get the bubbles out.</li>
-                            <li>Combine the milk with the espresso- when experienced enough, practise your latte art and create a simple heart!</li>
-                            <li>Enjoy your hot, creamy latte with some of these delicious <a id="cookielink" href="cookie.html#recipe">chocolate chip cookies</a>.</li>
+                            <li>Combine the milk with the espresso- when experienced enough, practise your latte art and create a simple heart❤️</li>
+                            <li>Enjoy your hot, creamy latte with some of these delicious <a id="cookielink" href="cookie.html#recipe">chocolate chip cookies</a>!</li>
                         </ol>
                     </main>
                 </div>
             </div>
 
-            <br />
+            <hr />
+            <div class="row">
+                <div class="col-sm-6">
+                    <form id="order">
+                        <h5>Order your favourite coffee bean!</h5>
+                        <label for="origin">Origin</label>
+                        <select id="origin" name="origin" required onchange="">
+                            <option class="origin" name="origin" value="columbia" selected>Columbia</option>
+                            <option class="origin" name="origin" value="kenya">Kenya</option>
+                            <option class="origin" name="origin" value="ethiopia">Ethiopia</option>
+                            <option class="origin" name="origin" value="sumatra">Sumatra</option>
+                            <option class="origin" name="origin" value="guatemala">Guatemala</option>
+                        </select>
 
+                        <br />
+                        <fieldset required>
+                            <label for="type">Type</label>
+                            <input type="checkbox" name="type" class="type" value="Arabica" /> Arabica
+                            <input type="checkbox" name="type" class="type" value="Robusta" /> Robusta
+                            <p id="type-error"></p>
+                        </fieldset>
+
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" name="amount" min="250" max="750" step="250" />g
+                        <p id="amt-error"></p>
+
+                        <label for="phone">Phone #</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" required />
+                        <p id="phone-error"></p>
+
+                        <label for="date">Delivery Date</label>
+                        <input type="date" name="date" max="2020-12-30" min="2020-11-01" value = "2020-12-12" required />
+
+                        <br />
+                        <label for="address">Delivery Address:</label>
+                        <textarea name="address" id="addr" rows="2" cols="20" required></textarea>
+                        <p id="addr-error"></p>
+                        <br />
+                        <label for="code">Postal Code:</label>
+                        <input type="text" id="code" name="code" pattern="[0-9]{6}"/>
+                        <p id="code-error"></p>
+
+                        <div id="button">
+                            <button onclick="output()" type="button">Order🛒</button>
+                            <p id="output-message"></p>
+                        </div>
+                        
+                    </form>
+                </div>
+
+                <div class="col-sm-6">
+                    <aside>
+                        <table style="caption-side:top">
+                            <b><tcaption>Coffee Origins</tcaption></b>
+                            <tr id="theader">
+                                <th>Origin</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr id="one">
+                                <th>Columbia</th>
+                                <th>Columbian beans have a mellow acdity and strong caramel sweetness, with a nutty undertone.</th>
+                            </tr>
+                            <tr id="two">
+                                <th>Kenya</th>
+                                <th>Kenyan coffee has a rich taste, with a wine-like taste and has tones of fruit and berry. <b>Recommended</b> if you're a new coffee drinker!</th>
+                            </tr>
+                            <tr id="one">
+                                <th>Ethiopia</th>
+                                <th>Ethiopian coffees have floral, herbal and citrus tasting notes. It has mild acidity and is not too strong a body- making it a favourite of many.</th>
+                            </tr>
+                            <tr id="two">
+                                <th>Sumatra</th>
+                                <th>Sumatran coffee is known for its earthy tones, and its low acidity. <i>Sumatra was actually one of the first few places to start growing coffee on a large scale!</i></th>
+                            </tr>
+                            <tr id="one">
+                                <th>Guatemala</th>
+                                <th>Guatemalan coffee (the nicest, this is non-negotiable) has chocolatey favour notes, and is notably sweet. It has a medium to full body.</th>
+                            </tr>
+                        </table>
+                    </aside>
+                </div>
             </div>
-
-
-            <div class="col-sm-12 footer">
-                <div w3-include-html="footer.html"></div>
-            </div>
+            
+        <hr />
+        <div id="credits">
+            <p>Credits</p>
+            <p>Information:</p>
+            <a href="https://espressocoffeeguide.com/gourmet-coffee/arabian-and-african-coffees/kenya-coffee/">kenyan coffee info</a>
+            <a href="https://www.cradlecoffee.co.za/product/colombian/#:~:text=Description,flavour%20to%20most%20North%20Americans."> | columbian coffee info</a>
+            <a href="https://en.wikipedia.org/wiki/Coffee_production_in_Ethiopia#:~:text=Harar%20is%20in%20the%20Eastern,its%20distinctive%20fruity%2C%20wine%20flavour.&text=It%20has%20medium%20acidity%20and,done%20almost%20entirely%20by%20hand."> | ethiopian coffee info</a>
+            <a href="https://espressocoffeeguide.com/gourmet-coffee/asian-indonesian-and-pacific-coffees/indonesia-coffee/sumatra-coffee/"> | sumatran coffee info</a>
+            <a href="https://www.homegrounds.co/guatemalan-coffee/"></a>
+            <p>Images:</p>
+            <p><a href="https://unsplash.com/">Unsplash. </a>All images free for use. </p>
+        </div>
+        <br />
         </div>
 
-    <script>
-        w3.includeHTML();
-    </script>
+
+                <div class="col-sm-12 footer">
+                    <div w3-include-html="footer.html"></div>
+                </div>
+            </div>
+
+            <script>
+                w3.includeHTML();
+            </script>
 
 </body>
 </html>

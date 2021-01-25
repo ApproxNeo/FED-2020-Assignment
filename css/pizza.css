@@ -148,8 +148,6 @@ main img {
     margin-bottom: auto;
 }
 
-
-
 .h3-responsive {
     background-color: antiquewhite;
     margin: 10px;
@@ -159,12 +157,10 @@ main img {
     opacity: 0.6;
 
 }
-
    aside.fadeIn, .form.show,main.fadeIn {
         opacity: 1;
         transform: translateY(0);
     }
-
 
 aside {
     background-color: #F6F3ED;
@@ -205,9 +201,7 @@ input:hover {
     font-size: .8em;
     text-transform: uppercase;
 }
-.onsubmit{
-    font-size:50px;
-}
+
 
 .img-fluid {
     transition: transform .2s; /* Animation */

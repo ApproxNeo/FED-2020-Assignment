@@ -1,4 +1,6 @@
-﻿body
+﻿/*----- Constant -----*/
+
+body
 {
     background-color: mediumturquoise;
 }
@@ -7,33 +9,46 @@
     box-sizing: border-box
 }
 
-/*-----About Cake-----*/
-.aboutCake {
-    border: dotted;
-    border-color: ghostwhite;
-    margin: 10px;
-    margin-right: -10em;
-    padding: 10px;
-}
-
-.header {
-    font-family: 'Allan', cursive;
-    margin: 10px;
-    color: floralwhite;
-}
-
 .paragraph {
     font-family: 'Noto Sans JP', sans-serif;
     margin: 10px;
     color: floralwhite;
 }
 
-#imageright {
-    height: 500px;
+.header {
+    font-family: 'Allan', cursive;
+    margin: 10px;
+    color: floralwhite;
+    font-size: 100px;
+    white-space: nowrap;
+}
+
+.cite {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 10px;
+    color: floralwhite;
+    font-size: 12px;
+}
+
+
+#box {
+    margin-top: 5em;
+}
+
+
+/*----- 1.About Cake -----*/
+.aboutCake {
+    margin-right: -10em;
+    margin-bottom: -20em;
+    padding: 10px;
+}
+
+#imageleft {
+    height: 670px;
     width: auto;
+    margin-top: -6.25em;
     margin-bottom: -6.25em;
-    margin-top: -6.2em;
-    padding-right: -6.2em;
+    margin-left: -6.3em;
 }
 
 .col-md-6 {
@@ -41,13 +56,33 @@
 }
 
 #about {
-    background-color: #41B3A3;
+    background-color: #E27D60;
     padding: 100px;
-    background-color: black;
 }
 /*--------------------*/
 
-/*-----Types of Cake-----*/
+/*----- 2. History of Cake -----*/
+
+.historyCake {
+    padding: 10px;
+    margin-left: -10em;
+    margin-bottom: -20em;
+}
+
+#history {
+    background-color: black;
+    padding: 100px;
+}
+
+#imageright {
+    height: 670px;
+    width: auto;
+}
+
+/*------------------------------*/
+
+/*----- 3. Types of Cake -----*/
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -138,13 +173,17 @@
     margin-left: auto;
     margin-right: auto;
 }
+.img {
+    height: 75%;
+    width: 75%;
+}
 
 #types {
     background-color: #E8A87C;
+    padding: 100px;
 }
 
 #slideshow {
-    max-height: 400px;
-    width: auto;
+    margin-right: 50px;
 }
 /*-----------------------*/
