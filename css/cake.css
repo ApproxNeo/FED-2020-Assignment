@@ -31,7 +31,10 @@ body
 }
 
 /*----- 1. ABOUT CAKE -----*/
-#image {
+.col-sm-3 {
+    position: relative;
+}
+.image {
     width: 500px;
     display: block;
 }
@@ -42,12 +45,13 @@ body
     bottom: 0;
     left: 0;
     right: 0;
+    height: auto;
     width: 500px;
     opacity: 0;
     transition: .5s ease;
     background-color: black;
 }
-.text {
+.hide {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -60,5 +64,40 @@ body
 }
 .col-sm-3:hover .overlay {
     opacity: 0.5;
+}
+.textbox {
+    display: none;
+    font-weight: normal;
+    color: red;
+}
+.show {
+    display: none;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hide:target + .show {
+    display: inline;
+    text-decoration: none;
+}
+.hide:target {
+    display: none;
+    text-decoration: none;
+}
+.hide:target ~ .answer {
+    display: inline;
+    text-decoration: none;
+}
+@media print {
+    .hide, .show {
+        display: none;
+    }
 }
 /*-------------------------*/
