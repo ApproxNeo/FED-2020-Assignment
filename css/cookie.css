@@ -250,9 +250,11 @@ h1 {
     top: 0;
     left: 0;
     background-color: lightpink;
+    opacity: 0.95;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    
 }
 
 .sidenav a {
@@ -291,4 +293,9 @@ h1 {
         font-size: 18px;
 
     }
+}
+
+#navbutton:hover  {
+    color: lightpink;
+    transition: .4s;
 }
