@@ -2,6 +2,7 @@
 /* global styles */
 body {
     font-family: 'Arvo', serif;
+    transition: background-color .5s;
 }
 
 h1 {
@@ -30,7 +31,7 @@ h1 {
     padding: 5px;
     height: auto;
     width: 400px;
-    background-color:lightpink;
+    background-color: lightpink;
     border-radius: 5px;
     margin: 5px;
 }
@@ -85,9 +86,10 @@ h1 {
     border-radius: 5px;
 }
 
-#learnmore:hover{
+#learnmore:hover {
     background-color: bisque;
     opacity: 0.4;
+    transition: .2s;
 
 }
 
@@ -101,8 +103,8 @@ h1 {
     width: 800px;
 }
 
-#tipslist li{
-    margin:10px;
+#tipslist li {
+    margin: 10px;
 }
 
 #tipheader {
@@ -130,11 +132,13 @@ h1 {
     background-color: bisque;
     color: black;
     cursor: url("../images/coffeeicon.png"), auto;
+    transition: .3s;
 }
 
 #coffeelink:hover {
     background-color: bisque;
     opacity: 0.8;
+   
 }
 
 /* Video styles */
@@ -157,9 +161,8 @@ h1 {
     border-radius: 5px;
     padding: 0.5px;
     margin: 10px;
-    
-    
 }
+
 #form {
     background-color: lightpink;
     border-radius: 5px;
@@ -177,7 +180,6 @@ h1 {
 
 #formlabel {
     font-size: 20px;
-    
 }
 
 #label {
@@ -192,20 +194,21 @@ h1 {
 #submission {
     background-color: bisque;
     border-color: lightpink;
+    transition: .2s;
 }
 
-#submission:hover{
-    opacity:0.8;
-    background-color: white;
-}
+    #submission:hover {
+        opacity: 0.8;
+        background-color: white;
+    }
 
 /* Table styles */
 
-#table h1{
+#table h1 {
     width: 750px;
 }
 
-#table td{
+#table td {
     font-size: 15px;
 }
 
@@ -218,15 +221,15 @@ h1 {
     border-color: lightpink;
 }
 
-#table tr,th,td{
-    border: solid;
-    padding: 15px;
-}
+    #table tr, th, td {
+        border: solid;
+        padding: 15px;
+    }
 
-#table table{
-    margin: 20px 20px 0px 50px; 
-    border: dotted;
-}
+    #table table {
+        margin: 20px 20px 0px 50px;
+        border: dotted;
+    }
 
 #left {
     background-color: lightpink;
@@ -237,8 +240,71 @@ h1 {
 }
 
 
+/* Navbar styles */
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: lightpink;
+    opacity: 0.95;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+}
 
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    }
 
+.sidenav a:hover {
+    color: dimgray;
 
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+
+    }
+}
+
+#navbutton:hover  {
+    color: lightpink;
+    transition: .4s;
+}
+
+/* Credits styles */
+
+#credits {
+    border-top: 2px solid bisque;
+    margin-left: 500px;
+    margin-right: 500px;
+}
 
