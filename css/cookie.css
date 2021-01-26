@@ -299,3 +299,12 @@ h1 {
     color: lightpink;
     transition: .4s;
 }
+
+/* Credits styles */
+
+#credits {
+    border-top: 2px solid bisque;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
