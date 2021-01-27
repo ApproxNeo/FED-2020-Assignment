@@ -1,4 +1,5 @@
-﻿body
+﻿/*----- Constant -----*/
+body
 {
     background-color: mediumturquoise;
 }
@@ -7,159 +8,96 @@
     box-sizing: border-box
 }
 
-/*-----About Cake-----*/
-.aboutCake {
-    margin-right: -10em;
-    margin-bottom: -20em;
-    padding: 10px;
+.paragraph {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 10px;
+    font-size: 25px;
+    color: floralwhite;
 }
 
 .header {
     font-family: 'Allan', cursive;
     margin: 10px;
     color: floralwhite;
-    font-size: 100px;
+    font-size: 80px;
     white-space: nowrap;
-}
-
-#box {
-    margin-top: 5em;
-}
-
-.paragraph {
-    font-family: 'Noto Sans JP', sans-serif;
-    margin: 10px;
-    color: floralwhite;
 }
 
 .cite {
     font-family: 'Noto Sans JP', sans-serif;
     margin: 10px;
     color: floralwhite;
-    font-size: 12px;
+    font-size: 20px;
 }
 
-#imageright {
-    height: 670px;
-    width: auto;
-    margin-top: -6.25em;
-    margin-bottom: -6.25em;
-    margin-left: -6.3em;
-}
-
-.col-md-6 {
-
-}
-
-#about {
-    background-color: #E27D60;
-    padding: 100px;
-}
-/*--------------------*/
-
-/*-----Types of Cake-----*/
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
+/*----- 1. ABOUT CAKE -----*/
+.col-sm-3 {
     position: relative;
-    margin: auto;
 }
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
+.image {
+    width: 500px;
+    display: block;
+}
+.overlay {
+    position: absolute;
+    margin-left: 15px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 500px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+.hide {
+    color: white;
+    font-size: 20px;
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+.col-sm-3:hover .overlay {
+    opacity: 0.5;
 }
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: ghostwhite;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Hide the images by default */
-.mySlides {
+.textbox {
     display: none;
+    font-weight: normal;
+    color: red;
 }
-
-/* Fading animation */
-.fades {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    opacity:1;
+.show {
+    display: none;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-
-/* Image */
-.image{
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
+.hide:target + .show {
+    display: inline;
+    text-decoration: none;
 }
-.img {
-    height: 50%;
-    width: 50%;
+.hide:target {
+    display: none;
+    text-decoration: none;
 }
-
-#types {
-    background-color: #E8A87C;
-    padding: 100px;
+.hide:target ~ .answer {
+    display: inline;
+    text-decoration: none;
 }
-
-#slideshow {
-    max-height: 400px;
-    width: auto;
+@media print {
+    .hide, .show {
+        display: none;
+    }
 }
-/*-----------------------*/
+/*-------------------------*/

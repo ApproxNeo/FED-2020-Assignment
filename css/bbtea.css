@@ -3,7 +3,7 @@
 
 
 .intro {
-    padding:100px;
+    padding:5vw;
 }
 
 .parallax {
@@ -226,3 +226,43 @@ td, th{
 .survey{
     border-radius:50px;
 }
+
+.columns {
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -.4rem;
+    margin-right: -.4rem
+}
+
+    .columns.col-gapless {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+        .columns.col-gapless > .column {
+            padding-left: 0;
+            padding-right: 0
+        }
+
+    .columns.col-oneline {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        overflow-x: auto
+    }
+
+
+.col-mx-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.col-ml-auto {
+    margin-left: auto
+}
+
+.col-mr-auto {
+    margin-right: auto
+}
+

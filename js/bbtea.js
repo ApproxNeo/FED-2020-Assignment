@@ -1,7 +1,7 @@
 // JavaScript source code
 
 
-function submission() {
+function submit() {
     var cansubmit
     if (!(document.getElementById("t1").checked || document.getElementById("t2").checked || document.getElementById("t3").checked)) {
         document.getElementById("alert1").innerHTML = "Please choose one of the options :D";

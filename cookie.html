@@ -18,302 +18,367 @@
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Hachi+Maru+Pop&display=swap">
-
     <script src="js/cookieform.js" defer></script>
-    <title>Cookies</title>
+    <script src="js/cookienavbar.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🍪 Cookies</title>
 
 </head>
 
 <body>
 
     <div>
-<!--                      Section for header                   -->
-        <div class="row">
+        <!--                      Section for header                   -->
+        <div class="row" id="top">
             <div class="col-md-12">
                 <div w3-include-html="header.html" id="header"></div>
             </div>
         </div>
 
-<!--                      Section for content                   -->
-        <div class="row">
-            <div class="col-md-6">
-<!--                      Section for intro                -->
-                <section id="intro">
-                    <h1>cookies</h1>
-                    <p id="fact"><b>Did you know?</b> The first Chocolate Chip cookie was created on <b>accident!</b> </p>
-                    <p id="fact">
-                        Ruth Wakefield, one of the owners of Toll House Inn, added chopped chocolate to her
-                        cookie batter in hopes of them melting, but accidentally created chocolate chip cookies instead!
-                    </p>
-                    <a id="learnmore" target="_blank" href="https://en.wikipedia.org/wiki/Chocolate_chip_cookie">
-                        Learn More!
-                    </a>
-                </section>
-            </div>
-            <div class="col-md-6" id="cookieimg">
-                <div class="container">
-                    <img id="cookie1" class="img-fluid image"
-                         src="images/cookie.jpeg" alt="cookie1">
-                    <div class="overlay">
-                        <div class="text">chocolate chip cookie</div>
+        <!--                      Section for content                   -->
+        
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#top">^ Back to top</a>
+            <a href="#recipedetails">Recipe</a>
+            <a href="#cookievideo">Video</a>
+            <a href="#formsection">Comments</a>
+            <a href="#table">Common Mistakes</a>
+            <a href="#credits">Credits</a>
+        </div>
+
+        <div id="main">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div>
+                        <span id="navbutton" style="margin-left:15px; font-size:30px; cursor:pointer;"
+                              onclick="openNav()">&#9776;</span>
+                    </div>
+                    <!--                      Section for intro                -->
+                    <div>
+                        <section id="intro">
+                            <h1>cookies</h1>
+                            <p id="fact"><b>Did you know?</b> The first Chocolate Chip cookie was created on <b>accident!</b> </p>
+                            <p id="fact">
+                                Ruth Wakefield, one of the owners of Toll House Inn, added chopped chocolate to her
+                                cookie batter in hopes of them melting, but accidentally created chocolate chip cookies instead!
+                            </p>
+                            <a id="learnmore" target="_blank" href="https://en.wikipedia.org/wiki/Chocolate_chip_cookie">
+                                Learn More!
+                            </a>
+                        </section>
+                    </div>
+
+                </div>
+                <div class="col-md-6" id="cookieimg">
+                    <div class="container">
+                        <img id="cookie1" class="img-fluid image"
+                             src="images/cookie.jpeg" alt="cookie1">
+                        <div class="overlay">
+                            <div class="text">chocolate chip cookie</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
-<!--                      Section for recipe                -->
-        <div class="row">
+            <br>
+            <!--                      Section for recipe                -->
+            <div class="row">
 
-            <div class="col-md-6">
-                <section id="recipedetails">
-                    <h1>recipe</h1>
-                    <div>
-<!--                      Section for ingredients               -->
-                        <h2>Ingredients:</h2>
-                        <ol id="ingredients">
-                            <li>
-                                White sugar (50g)
-                            </li>
+                <div class="col-md-6">
+                    <section id="recipedetails">
+                        <h1>recipe🧈</h1>
+                        <div>
+                            <!--                      Section for ingredients               -->
+                            <h2>Ingredients:</h2>
+                            <ol id="ingredients">
+                                <li>
+                                    White sugar (50g)
+                                </li>
 
-                            <li>
-                                Brown sugar (60g)
-                            </li>
+                                <li>
+                                    Brown sugar (60g)
+                                </li>
 
-                            <li>
-                                Melted unsalted butter, at room temperature (90g)
-                            </li>
+                                <li>
+                                    Melted unsalted butter, at room temperature (90g)
+                                </li>
 
-                            <li>
-                                Baking soda (5g)
-                            </li>
+                                <li>
+                                    Baking soda (5g)
+                                </li>
 
-                            <li>
-                                All purpose flour (100g)
-                            </li>
+                                <li>
+                                    All purpose flour (100g)
+                                </li>
 
-                            <li>
-                                1 Egg (50g)
-                            </li>
+                                <li>
+                                    1 Egg (50g)
+                                </li>
 
-                            <li>
-                                Vanilla Extract (4g)
-                            </li>
+                                <li>
+                                    Vanilla Extract (4g)
+                                </li>
 
-                            <li>
-                                Salt (2.5g)
-                            </li>
+                                <li>
+                                    Salt (2.5g)
+                                </li>
 
-                            <li>
-                                Chopped dark chocolate (as much as you want :) around 60-70% Cacao )
-                            </li>
+                                <li>
+                                    Chopped dark chocolate (as much as you want :) around 60-70% Cacao )
+                                </li>
 
-                        </ol>
-                    </div>
-                    <div>
-<!--                      Section for instructions             -->
-                        <h2>Instructions:</h2>
-                        <ol id="instructions">
+                            </ol>
+                        </div>
+                        <div>
+                            <!--                      Section for instructions             -->
+                            <h2>Instructions:</h2>
+                            <ol id="instructions">
 
-                            <li>
-                                Break down the <b>butter</b> into smaller chunks, and add into a microwave safe bowl and
-                                microwave on low power for 30 seconds.
-                            </li>
+                                <li>
+                                    Break down the <b>butter</b> into smaller chunks, and add into a microwave safe bowl and
+                                    microwave on low power for 30 seconds.
+                                </li>
 
-                            <li>
-                                Remove butter from microwave and stir, repeat step 1 and 2 until butter is melted.
-                            </li>
+                                <li>
+                                    Remove butter from microwave and stir, repeat step 1 and 2 until butter is melted.
+                                </li>
 
-                            <li>
-                                In another bowl, add in <b>brown sugar</b>, <b>white sugar</b> and <b>salt</b> and whisk to combine.
-                            </li>
+                                <li>
+                                    In another bowl, add in <b>brown sugar</b>, <b>white sugar</b> and <b>salt</b> and whisk to combine.
+                                </li>
 
-                            <li>
-                                Add <b>melted butter</b> and <b>vanilla extract</b> into <b>brown sugar, white sugar and salt</b> mixture, stir until a 
-                                paste is formed. (When picking up your whisk, you should see ribbons of mixture)
-                            </li>
+                                <li>
+                                    Add <b>melted butter</b> and <b>vanilla extract</b> into <b>brown sugar, white sugar and salt</b> mixture, stir until a
+                                    paste is formed. (When picking up your whisk, you should see ribbons of mixture)
+                                </li>
 
-                            <li>
-                                In another bowl add <b>all purpose flour and baking soda</b>, whisk to combine
-                            </li>
+                                <li>
+                                    In another bowl add <b>all purpose flour and baking soda</b>, whisk to combine
+                                </li>
 
-                            <li>
-                                Add <b>all purpose flour and baking soda mixture</b> into <b>wet mixture from step 4</b>
-                                and <b>gently fold with a spatula</b> (avoid using a whisk, as heavy mixing would result
-                                in cakey and tough cookies!!) 
-                            </li>
+                                <li>
+                                    Add <b>all purpose flour and baking soda mixture</b> into <b>wet mixture from step 4</b>
+                                    and <b>gently fold with a spatula</b> (avoid using a whisk, as heavy mixing would result
+                                    in cakey and tough cookies!!)
+                                </li>
 
-                            <li>
-                                Chop the <b>dark chocolate bar</b> into chunks. The more uneven the better! It improves the texture :)
-                            </li>
+                                <li>
+                                    Chop the <b>dark chocolate bar</b> into chunks. The more uneven the better! It improves the texture :)
+                                </li>
 
-                            <li>
-                                <b>Gently fold</b> the dark chocolate chunks into your batter.
-                            </li>
+                                <li>
+                                    <b>Gently fold</b> the dark chocolate chunks into your batter.
+                                </li>
 
-                            <li>
-                                Try your best to not eat any raw batter (although delicious, you might get salmonella and die)
-                            </li> 
+                                <li>
+                                    Try your best to not eat any raw batter (although delicious, you might get salmonella and die)
+                                </li>
 
-                            <li>
-                                Transfer all cookie dough into a container and <b>rest in the fridge for at least an hour and up to 36 hours</b>. 
-                                (Resting cookie dough allows flavours to develop and they will taste much better. But if you can't resist, them off immediately
-                                will also yield great results.)
-                            </li>
+                                <li>
+                                    Transfer all cookie dough into a container and <b>rest in the fridge for at least an hour and up to 36 hours</b>.
+                                    (Resting cookie dough allows flavours to develop and they will taste much better. But if you can't resist, them off immediately
+                                    will also yield great results.)
+                                </li>
 
-                            <li>
-                                Preheat oven to <b>180 celsius</b>, and bake cookies on a baking tray lined with parchment paper for <b>12~15 minutes</b> until
-                                edges are slightly browned and crispy
-                            </li>
+                                <li>
+                                    Preheat oven to <b>180 celsius</b>, and bake cookies on a baking tray lined with parchment paper for <b>12~15 minutes</b> until
+                                    edges are slightly browned and crispy
+                                </li>
 
-                            <li>
-                                Enjoy the cooled cookies with a nice cup of milk 
-                                or <a id ="coffeelink" href="coffee.html">coffee! :) (try one of our recipes too!)</a>
-                            </li>
-                        </ol>
-                    </div>
+                                <li>
+                                    Enjoy the cooled cookies with a nice cup of milk
+                                    or <a id="coffeelink" href="coffee.html">coffee! :) (try one of our recipes too!)</a>
+                                </li>
+                            </ol>
+                        </div>
 
-                </section>
-<!--                      Section for form            -->
-                <section id="formsection">
-                    <form id="form">
-                        <h2 id="header">any comments?</h2>
-                        <h3 style="font-size:15px; text-align:center;">
-                        fields marked with * are required
-                        </h3>
+                    </section>
+                    <!--                      Section for form             -->
+                    <section id="formsection">
+                        <form id="form">
+                            <h2 id="header">any comments?</h2>
+                            <h3 style="font-size:15px; text-align:center;">
+                                fields marked with * are required
+                            </h3>
 
-                        <br>
+                            <br>
 
-                        <label id="formlabel" for="star" title="text">rating*</label>
+                            <label id="formlabel" for="star" title="text">rating*</label>
 
-                        <label id="label" for="star" title="text">1⭐</label>
-                        <input class ="rating" name="star" id="star1" type="radio" value="1" required/>
+                            <label id="label" for="star" title="text">1⭐</label>
+                            <input class="rating" name="star" id="star1" type="radio" value="1" required />
 
-                        <label id="label" for="star" title="text">2⭐</label>
-                        <input class ="rating" name="star" id="star2" type="radio" value="2" />
+                            <label id="label" for="star" title="text">2⭐</label>
+                            <input class="rating" name="star" id="star2" type="radio" value="2" />
 
-                        <label id="label" for="star" title="text">3⭐</label>
-                        <input class ="rating" name="star" id="star3" type="radio" value="3" />
+                            <label id="label" for="star" title="text">3⭐</label>
+                            <input class="rating" name="star" id="star3" type="radio" value="3" />
 
-                        <label id="label" for="star" title="text">4⭐</label>
-                        <input class ="rating" name="star" id="star4" type="radio" value="4"/>
+                            <label id="label" for="star" title="text">4⭐</label>
+                            <input class="rating" name="star" id="star4" type="radio" value="4" />
 
-                        <label id="label" for="star" title="text">5⭐</label>
-                        <input class ="rating" name="star" id="star5" type="radio" value="5"/>
+                            <label id="label" for="star" title="text">5⭐</label>
+                            <input class="rating" name="star" id="star5" type="radio" value="5" />
 
-                        <br>
+                            <br>
 
-                        <label id="formlabel" for="comment" title="text">comment</label>
-                        <br>
-                        <textarea id="comment" name="comment"
-                                  cols="30" rows="8"
-                                  placeholder="feedback or general comments :)" ></textarea>
+                            <label id="formlabel" for="comment" title="text">comment</label>
+                            <br>
+                            <textarea id="comment" name="comment"
+                                      cols="30" rows="8"
+                                      placeholder="feedback or general comments :)"></textarea>
 
-                        <br>
-                        <label id="formlabel" for="name" title="text">name*</label>
-                        <br>
-                        <textarea id="name" name="name"
-                                  cols="30" rows="3"
-                                  placeholder="who are you" required></textarea>
+                            <br>
+                            <label id="formlabel" for="name" title="text">name*</label>
+                            <br>
+                            <textarea id="name" name="name"
+                                      cols="30" rows="3"
+                                      placeholder="who are you" required></textarea>
 
-                        <br>
+                            <br>
 
-                        <label id="formlabel" for="email" title="text">email*</label>
-                        <br>
-                        <input type="email" name="email" style="width:280px" required>
+                            <label id="formlabel" for="email" title="text">email*</label>
+                            <br>
+                            <input type="email" name="email" style="width:280px" required>
 
-                        <br>
-                        <br>
-                        
-                        <button type="button" id="submission" onclick="setoutputs()">Submit</button>
-                        <p id="output"></p>
-                    </form>
-                </section>
-            </div>
+                            <br>
+                            <br>
 
-            <div class="col-md-6">
-                <section id="recipe">
-                    <h1>crispy & chewy Chocolate Chip Cookie 🍪</h1>
-<!--                      Section for description            -->
-                    <p id="recipedescription">
-                        Here's the only chocolate chip cookie recipe you will ever need!
-                    </p>
-                    <h3>Tips:</h3>
-                    <p>
-                        <ul id="tipslist" style="list-style-type:circle;">
-                            <li>
-                                <b id="tipheader">Use chopped chocolate chunks! 🍫</b> <br>Chocolate chips do not melt as well as chunks,
-                                chopping your own chocolate will ensure fudgy pockets of chocolate everytime!
-                            </li>
+                            <button type="button" id="submission" onclick="setoutputs()">Submit</button>
+                            <p id="output"></p>
+                        </form>
+                    </section>
+                </div>
 
-                            <li>
-                                <b id="tipheader">Sprinkle rock salt after baking! 🧂</b> <br>Saltiness gives a perfect balance to the sweetness of cookies,
-                                sprinkle some onto freshly baked cookies to enhance the depth of flavour!
-                            </li>
+                <div class="col-md-6">
+                    <section id="recipe">
+                        <h1>crispy & chewy Chocolate Chip Cookie 🍪</h1>
+                        <!--                      Section for description            -->
+                        <p id="recipedescription">
+                            Here's the only chocolate chip cookie recipe you will ever need!
+                        </p>
+                        <h3>Tips:</h3>
+                        <p>
+                            <ul id="tipslist" style="list-style-type:circle;">
+                                <li>
+                                    <b id="tipheader">Use chopped chocolate chunks! 🍫</b> <br>Chocolate chips do not melt as well as chunks,
+                                    chopping your own chocolate will ensure fudgy pockets of chocolate everytime!
+                                </li>
 
-                            <li>
-                                <b id="tipheader">Mix up the filling! 🍬</b> <br>Using different kinds of chocolate (milk, dark, mint) can
-                                yield very different cookies, feel free to try and see which you like best!
-                            </li>
-                        </ul>
-                    </p>
-                </section>
+                                <li>
+                                    <b id="tipheader">Sprinkle rock salt after baking! 🧂</b> <br>Saltiness gives a perfect balance to the sweetness of cookies,
+                                    sprinkle some onto freshly baked cookies to enhance the depth of flavour!
+                                </li>
 
-                <section id="cookievideo">
-                    <h1>a video</h1>
-                    <iframe width="735" height="506" src="https://www.youtube.com/embed/wyuec0PPz68" 
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                                <li>
+                                    <b id="tipheader">Mix up the filling! 🍬</b> <br>Using different kinds of chocolate (milk, dark, mint) can
+                                    yield very different cookies, feel free to try and see which you like best!
+                                </li>
+                            </ul>
+                        </p>
+                    </section>
+
+                    <section id="cookievideo">
+                        <h1>a video📽</h1>
+                        <iframe width="735" height="506" src="https://www.youtube.com/embed/wyuec0PPz68"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write;
                             encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                </section>
+                        </iframe>
+                    </section>
 
-                <section id="table">
-                    <h1>common mistakes ☹️</h1>
-                    <table>
-                        <tr>
-                            <td id="left"><b>Cookies are tough and cakey</b></td>
-                            <td id="right"><b>You are overmixing your dough!</b><br>
-                            Mixing your dough too much will cause the gluten to tense up, resulting in a tougher texture.
-                            Try mixing more gently and for a lesser amount of time.
-                            </td>
-                        </tr>
+                    <section id="table">
+                        <h1>common mistakes ☹️</h1>
+                        <table>
+                            <tr>
+                                <td id="left"><b>Cookies are tough and cakey</b></td>
+                                <td id="right">
+                                    <b>You are overmixing your dough!</b><br>
+                                    Mixing your dough too much will cause the gluten to tense up, resulting in a tougher texture.
+                                    Try mixing more gently and for a lesser amount of time.
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <td id="left"><b>Cookies are burnt</b></td>
-                            <td id="right"><b>Your oven temperature is too high!</b><br>
-                            Having too high of an oven temperature results in your cookies cooking too 
-                            quickly. Try reducing the temperature by 5-10 degrees.</td>
-                        </tr>
+                            <tr>
+                                <td id="left"><b>Cookies are burnt</b></td>
+                                <td id="right">
+                                    <b>Your oven temperature is too high!</b><br>
+                                    Having too high of an oven temperature results in your cookies cooking too
+                                    quickly. Try reducing the temperature by 5-10 degrees.
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <td id="left"><b>Cookies not spreading</b></td>
-                            <td id="right"><b>Use parchment paper!</b><br>
-                            Parchment paper is a non-stick material that allows the dough to spread as it melts, 
-                            baking them on any other surface would prevent them from spreading.</td>
-                        </tr>
+                            <tr>
+                                <td id="left"><b>Cookies not spreading</b></td>
+                                <td id="right">
+                                    <b>Use parchment paper!</b><br>
+                                    Parchment paper is a non-stick material that allows the dough to spread as it melts,
+                                    baking them on any other surface would prevent them from spreading.
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <td id="left"><b>Cookies too crisp for me</b></td>
-                            <td id="right"><b>Cookies have too much white sugar!</b><br>
-                            Increasing the amount of brown sugar and decreasing white sugar will make the cookies
-                            more chewy.</td>
-                        </tr>
+                            <tr>
+                                <td id="left"><b>Cookies too crisp for me</b></td>
+                                <td id="right">
+                                    <b>Cookies have too much white sugar!</b><br>
+                                    Increasing the amount of brown sugar and decreasing white sugar will make the cookies
+                                    more chewy.
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <td id="left"><b>My cookies are too salty</b></td>
-                            <td id="right"><b>You are using too much salt!</b><br> Also check if your butter is unsalted and not salted.</td>
-                        </tr>
+                            <tr>
+                                <td id="left"><b>My cookies are too salty</b></td>
+                                <td id="right"><b>You are using too much salt!</b><br> Also check if your butter is unsalted and not salted.</td>
+                            </tr>
 
 
 
-                    </table>
-                </section>
+                        </table>
+                    </section>
+                </div>
+
+            </div>
+            <br>
+            <div id="credits">
+                <p style="text-align:center; margin-top:5px;">Credits:</p>
+
+                <p style="text-align:center; margin-bottom:-1px; font-size: 15px">
+                    <b>Fun Fact:</b>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/Chocolate_chip_cookie">
+                        From Wikipedia
+                    </a>
+                </p>
+
+                <p style="text-align:center; margin-bottom:-1px; font-size: 15px">
+                    <b>Video:</b>
+                    <a target="_blank" href="https://youtu.be/wyuec0PPz68">
+                        From Joshua Weissman
+                    </a>
+                </p>
+
+                <p style="text-align:center; margin-bottom:-1px; font-size: 15px">
+                    <b>Cookie Image: </b>
+                    <a target="_blank" href="https://www.theboywhobakes.co.uk/recipes/2020/5/7/sourdough-chocolate-chip-cookie">
+                        From theboywhobakes
+                    </a>
+                </p>
+
+                <p style="text-align:center; margin-bottom:-1px; font-size: 15px">
+                    <b>Coffee bean cursor: </b>
+                    <a target="_blank" href="https://www.iconexperience.com/g_collection/icons/?icon=coffee_bean">
+                        From iconexperience
+                    </a>
+                </p>
+
+                <p style="text-align:center; font-size: 15px"><b>Recipe:</b> My own 🙃</p>
+
+
             </div>
 
         </div>
 
-
-
-<!--                      Section for footer             -->
+        <!--                      Section for footer             -->
         <div class="row">
             <div class="col-md-12 footer">
                 <div w3-include-html="footer.html"></div>
