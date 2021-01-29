@@ -1,6 +1,9 @@
 ﻿@charset "UTF-8";
 
 
+
+
+
 header {
     color: whitesmoke;
     background-attachment: fixed;
@@ -42,7 +45,7 @@ nav div {
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
     color: #ffffff;
-    padding: 15px;
+    padding: 10px 15px 15px 10px;
     min-width: 3em;
     transition: all ease 1s;
     font-size: 30px;
