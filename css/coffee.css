@@ -3,6 +3,10 @@
     font-weight: 500;
 }
 
+p{
+    padding:3px;
+}
+
 #coffeeNavbar{
     background-color:saddlebrown;
     padding:0.4em;
@@ -22,7 +26,7 @@
 
 #roasts {
     margin: 10px auto;
-    text-align:center;
+    text-align: center;
 }
 
 #roasts h5 {
@@ -98,6 +102,10 @@ color:white;
     margin:10px 0 10px 0;
 }
 
+#recipe li{
+    padding:5px 0 5px 0;
+}
+
 #req{
     border:2px dotted saddlebrown;
 }
@@ -135,6 +143,10 @@ form h5{
     text-align:center;
 }
 
+address textarea {
+    vertical-align: middle;
+}
+
 form #button {
     text-align:center;
     margin:auto;
@@ -153,7 +165,9 @@ table, tr, th{
     border:2px solid black;
     font-weight:400;
     padding:3px;
+    padding:15px 2px 15.5px 2px;
 }
+
 
 table #theader{
     background-color:orange;

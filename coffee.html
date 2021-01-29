@@ -33,11 +33,10 @@
 
             <div class="row">
                 <div class="col-sm-12">
-                    <!--problem: navbar not aligning to center-->
-                    <!--solution: make position absolute-->
+                    
                     <nav class="navbar bg-white navbar-dark">
                         <button id="coffeenav-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#coffeeNavbar">
-                            <img src="../images/coffee-images/coffee_beans.png" />
+                            <span title="dropdown menu"><img src="../images/coffee-images/coffee_beans.png" /></span>
                             
                         </button>
                         <div class="collapse navbar-collapse" id="coffeeNavbar">
@@ -193,6 +192,7 @@
                         </select>
 
                         <br />
+                        <br />
                         <fieldset required>
                             <label for="type">Type</label>
                             <input type="checkbox" name="type" class="type" value="Arabica" /> Arabica
@@ -212,9 +212,12 @@
                         <input type="date" name="date" max="2020-12-30" min="2020-11-01" value = "2020-12-12" required />
 
                         <br />
-                        <label for="address">Delivery Address:</label>
-                        <textarea name="address" id="addr" rows="2" cols="20" required></textarea>
-                        <p id="addr-error"></p>
+                        <br />
+                        <div id="addressqn">
+                            <label for="address">Delivery Address:</label>
+                            <textarea name="address" id="addr" rows="2" cols="20" required></textarea>
+                            <p id="addr-error"></p>
+                        </div>
                         <br />
                         <label for="code">Postal Code:</label>
                         <input type="text" id="code" name="code" pattern="[0-9]{6}"/>
