@@ -3,6 +3,18 @@
     font-weight: 500;
 }
 
+#coffeeNavbar{
+    background-color:saddlebrown;
+    padding:0.4em;
+    font-size:2vh;
+    opacity:0.6;
+}
+
+#coffeeNavbar a{
+    color:white;
+    opacity:1;
+}
+
 #content {
     margin:auto;
     width:90%;
