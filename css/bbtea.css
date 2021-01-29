@@ -1,18 +1,17 @@
-﻿body {
+﻿body:not(.headerPortion) {
     font-family: 'Poiret One', cursive;
     font-size: 20px;
     font-weight: bold;
 }
 
-h1 {
+h2 {
     font-family: 'Amatic SC', cursive;
-    
-    
+    font-size:50px;
 }
 
 
 .intro {
-    padding:5vw;
+    padding: 5vw;
 }
 
 .parallax {
@@ -169,48 +168,48 @@ h1 {
     margin: 10px;
 }
 
-    #recipeBlended img{
-        height:30vh;
+#recipeBlended img {
+    height: 30vh;
+}
+
+#topic {
+    background-color: antiquewhite;
+    margin: 100px 10px 100px 10px;
+    border: solid;
+    border-radius: 10px;
+    border-color: bisque;
+}
+
+    #topic:hover {
+        opacity: 0.5;
     }
 
-    #topic {
-        background-color: antiquewhite;
-        margin: 100px 10px 100px 10px;
-        border: solid;
-        border-radius: 10px;
-        border-color: bisque;
-    }
-
-#topic:hover{
-    opacity:0.5;
-
+.food {
+    padding: 10px;
 }
 
-.food{
-    padding:10px;
+table {
+    margin: 20px;
 }
 
-table{
-    margin:20px;
-}
-td, th{
-    font-size:24px;
-    padding:10px;
+td, th {
+    font-size: 24px;
+    padding: 10px;
 }
 
-#recipe{
-    border:solid;
+#recipe {
+    border: solid;
     border-radius: 20px;
-    padding:20px;
-    font-size:20px;
-    margin-top:20px;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
-#recipe li{
-    padding-left:20px;
-    list-style-image: none;
-    padding-bottom:8px;
-}
+    #recipe li {
+        padding-left: 20px;
+        list-style-image: none;
+        padding-bottom: 8px;
+    }
 
 .reason {
     width: 80%;
@@ -232,8 +231,8 @@ td, th{
     box-sizing: border-box;
 }
 
-.survey{
-    border-radius:50px;
+.survey {
+    border-radius: 50px;
 }
 
 .columns {
@@ -274,4 +273,3 @@ td, th{
 .col-mr-auto {
     margin-right: auto
 }
-
