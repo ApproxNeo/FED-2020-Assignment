@@ -1,4 +1,6 @@
 // JavaScript source code
+
+//roast info
 function lightInfo() {
     document.getElementById('roast-info').innerHTML = 'Light, or Blonde roast coffee, is a mellow-tasting coffee that may have tasting notes of fruit, or nuts. Light roast coffees have a high acidity, and their light colour is due to being roasted for a shorter period of time. This is also the reason why light roast coffee has the highest caffeine content among the roast profiles.';
 }
@@ -11,6 +13,16 @@ function darkInfo() {
     document.getElementById('roast-info').innerHTML = 'Dark roast coffee contains the least amount of caffeine in the roast profile spectrum, and are the least acidic. The flavour of the dark roast can be best described as the flavour most people associate with coffee.';
 }
 
+//recipe
+function showRecipe() {
+    document.getElementById('recipe').style.display = "block";
+}
+
+function hideRecipe() {
+    document.getElementById('recipe').style.display = "none";
+}
+
+//form
 function output() {
     var submit = 0;
 
