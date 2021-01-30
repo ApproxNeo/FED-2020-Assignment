@@ -4,6 +4,7 @@
 $("form").submit(function (event) {
     $("span").text("Submitted Successfully.We will get back to you within 24 hours.").show().fadeOut(6000);
     event.preventDefault();
+    $("#form").trigger("reset");
 });
 
 

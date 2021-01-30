@@ -1,17 +1,26 @@
 ﻿body {
-    font-family: Courier New, Courier, monospace;
+    font-family: 'Old Standard TT', serif;
     font-weight: 500;
+    font-size:18px;
 }
 
 p{
     padding:3px;
 }
 
-#coffeeNavbar{
-    background-color:saddlebrown;
-    padding:0.4em;
-    font-size:2vh;
-    opacity:0.6;
+h1 {
+    font-family: 'Pompiere', cursive;
+}
+
+#coffeenav-toggler{
+    padding:0;
+}
+
+#coffeeNavbar {
+    background-color: saddlebrown;
+    padding: 0.4em;
+    font-size: 2vh;
+    opacity: 0.6;
 }
 
 #coffeeNavbar a{
@@ -93,22 +102,54 @@ color:white;
     text-align: center;
 }
 
+#latteanatomy {
+    background-color: saddlebrown;
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-right:10px;
+}
+
+
+#recipeimg img {
+    float:left;
+    border: 5px solid saddlebrown;
+    object-fit: cover;
+    width:30vw;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#recipebtn {
+    margin:auto;
+    padding:10px;
+    text-align:center;
+}
+
+#recipebtn button {
+    border: none;
+    padding:2px;
+    background-color: white;
+    font-size:20px;
+    text-align:center;
+}
+
 #recipe {
-    border: 5px double peachpuff;
-    border-spacing:5px;
+    background-color: #eaad55;
+    border: 5px double saddlebrown;
+    border-spacing: 5px;
     border-radius: 5px;
     padding: 4px;
     max-width: 100%;
-    margin:10px 0 10px 0;
+    margin: 5px 0 5px 0;
+    display: none;
 }
 
 #recipe li{
     padding:5px 0 5px 0;
 }
 
-#req{
-    border:2px dotted saddlebrown;
-}
 
 #row1{
     background-color:peachpuff;
@@ -129,6 +170,7 @@ aside {
     /*margin: 10px 0 10px 0;*/
 }
 
+
 aside img {
     object-fit: cover;
     height: 70vh;
@@ -141,11 +183,16 @@ aside p{
     color:black;
 }
 
-#order{
+#order {
     background-color: peachpuff;
-    border: 5px solid peachpuff;
-    border-radius: 5px;
-    padding: 8px;
+    border: none;
+    text-align: center;
+}
+
+#order form{
+    border:none;
+    margin:auto;
+    text-align:center;
 }
 
 form h5{
@@ -169,10 +216,16 @@ form button{
     text-align:center;
 }
 
-table, tr, th{
-    border:2px solid black;
-    font-weight:400;
-    padding:15px 2px 16px 2px;
+
+table, tr, th {
+    border: 2px solid black;
+    font-weight: 400;
+    padding: 23px 2px 24px 2px;
+}
+
+table {
+    margin: auto;
+    width: 100%;
 }
 
 
@@ -188,8 +241,26 @@ table #two{
     background-color:white;
 }
 
+
 #credits{
     font-size:1.5vh;
     line-height:2vh;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
 }
 

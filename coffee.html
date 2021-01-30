@@ -17,6 +17,10 @@
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
     <!--script-->
     <script src="js/coffee.js"></script>
+    <!--extra-->
+    <link rel="icon" href="images/coffee-images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Pompiere&display=swap" rel="stylesheet">
 </head>
 
 <body onload="fadeImage(3);">
@@ -36,13 +40,13 @@
                     
                     <nav class="navbar bg-white navbar-dark">
                         <button id="coffeenav-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#coffeeNavbar">
-                            <span title="dropdown menu"><img src="../images/coffee-images/coffee_beans.png" /></span>
-                            
+                            <span title="dropdown menu"><img class="hvr-grow" src="../images/coffee-images/coffee_beans.png" /></span>
+                            <p style="font-size:small;color:saddlebrown;padding:0;">dropdown menu</p>
                         </button>
                         <div class="collapse navbar-collapse" id="coffeeNavbar">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#recipe">Recipe</a>
+                                    <a class="nav-link" href="#recipebtn">Recipe</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#carouselExampleIndicators">Slideshow</a>
@@ -130,6 +134,18 @@
             </div>
 
             <!--r2-->
+            <div class="row" id="latteanatomy">
+                <div class="col-sm-6" id="recipeimg">
+                    <img src="images/coffee-images/latte.JPG" />
+                </div>
+
+                <div class="col-sm-6" id="recipebtn">
+                    <main>
+                        <h1>Discover your new favourite drink</h1>
+                        <button type="button" onclick="showRecipe()">Show Recipe▼</button>
+                    </main>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-sm-12" id="recipe">
                     <main>
@@ -148,7 +164,7 @@
                             </ul>
                         </div>
                         <br />
-                        
+
                         <p>The recipe</p>
                         <ol>
                             <li>Pour some milk into your pitcher, depending on your mug size. <i>Make sure to leave a little space for foam</i>.</li>
@@ -161,12 +177,15 @@
                             <li>Enjoy your hot, creamy latte with some of these delicious <a id="cookielink" href="cookie.html#recipe">chocolate chip cookies</a>!</li>
                         </ol>
                     </main>
+                    <div id="recipebtn">
+                        <button type="button" onclick="hideRecipe()">Hide▲</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" id="order">
                 <div class="col-sm-6">
-                    <form id="order">
+                    <form id="form">
                         <h5>Order your favourite coffee bean!</h5>
                         <label for="origin">Origin</label>
                         <select id="origin" name="origin" required onchange="">
@@ -195,7 +214,7 @@
                         <p id="phone-error"></p>
 
                         <label for="date">Delivery Date</label>
-                        <input type="date" name="date" max="2020-12-30" min="2020-11-01" value = "2020-12-12" required />
+                        <input type="date" name="date" max="2020-12-30" min="2020-11-01" value="2020-12-12" required />
 
                         <br />
                         <br />
@@ -206,14 +225,14 @@
                         </div>
                         <br />
                         <label for="code">Postal Code:</label>
-                        <input type="text" id="code" name="code" pattern="[0-9]{6}"/>
+                        <input type="text" id="code" name="code" pattern="[0-9]{6}" />
                         <p id="code-error"></p>
 
                         <div id="button">
                             <button onclick="output()" type="button">Order🛒</button>
                             <p id="output-message"></p>
                         </div>
-                        
+
                     </form>
                 </div>
 
@@ -248,20 +267,28 @@
                     </aside>
                 </div>
             </div>
-            
-        <hr />
-        <div id="credits">
-            <p>Credits</p>
-            <p>Information:</p>
-            <a href="https://espressocoffeeguide.com/gourmet-coffee/arabian-and-african-coffees/kenya-coffee/">kenyan coffee info</a>
-            <a href="https://www.cradlecoffee.co.za/product/colombian/#:~:text=Description,flavour%20to%20most%20North%20Americans."> | columbian coffee info</a>
-            <a href="https://en.wikipedia.org/wiki/Coffee_production_in_Ethiopia#:~:text=Harar%20is%20in%20the%20Eastern,its%20distinctive%20fruity%2C%20wine%20flavour.&text=It%20has%20medium%20acidity%20and,done%20almost%20entirely%20by%20hand."> | ethiopian coffee info</a>
-            <a href="https://espressocoffeeguide.com/gourmet-coffee/asian-indonesian-and-pacific-coffees/indonesia-coffee/sumatra-coffee/"> | sumatran coffee info</a>
-            <a href="https://www.homegrounds.co/guatemalan-coffee/"></a>
-            <p>Images:</p>
-            <p><a href="https://unsplash.com/">Unsplash. </a>All images free for use. </p>
-        </div>
-        <br />
+
+            <hr />
+            <div id="credits">
+                <p>Credits</p>
+                <p>Information:</p>
+                <p>
+                    <a href="https://espressocoffeeguide.com/gourmet-coffee/arabian-and-african-coffees/kenya-coffee/">kenyan coffee info</a>
+                    <a href="https://www.cradlecoffee.co.za/product/colombian/#:~:text=Description,flavour%20to%20most%20North%20Americans."> | columbian coffee info</a>
+                    <a href="https://en.wikipedia.org/wiki/Coffee_production_in_Ethiopia#:~:text=Harar%20is%20in%20the%20Eastern,its%20distinctive%20fruity%2C%20wine%20flavour.&text=It%20has%20medium%20acidity%20and,done%20almost%20entirely%20by%20hand."> | ethiopian coffee info</a>
+                    <a href="https://espressocoffeeguide.com/gourmet-coffee/asian-indonesian-and-pacific-coffees/indonesia-coffee/sumatra-coffee/"> | sumatran coffee info</a>
+                    <a href="https://www.homegrounds.co/guatemalan-coffee/"> | guatemalan coffee info</a>
+                    <a href="https://github.com/IanLunn/Hover/blob/master/README.md#hovercss"> | navbar toggle animation</a>
+                </p>
+                <p>Images:</p>
+                <p>
+                    <a href="https://unsplash.com/">Unsplash</a>
+                    <a href="https://favicon.io/emoji-favicons/hot-beverage"> | Favicon</a>
+                    <a href="https://www.iconexperience.com"> | Iconexperience. </a>
+                    all images free for use.
+                </p>
+            </div>
+            <br />
         </div>
 
 
