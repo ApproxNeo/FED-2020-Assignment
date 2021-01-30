@@ -100,7 +100,7 @@ h1 {
     border: dotted;
     border-radius: 5px;
     border-color: lightpink;
-    width: 800px;
+    width: 700px;
 }
 
 #tipslist li {
@@ -150,7 +150,7 @@ h1 {
     align-content: center;
     margin: 10px;
     padding: 30px;
-    width: 800px;
+    width: 700px;
 }
 
 
@@ -205,7 +205,7 @@ h1 {
 /* Table styles */
 
 #table h1 {
-    width: 750px;
+    width: 665px;
 }
 
 #table td {
@@ -217,7 +217,7 @@ h1 {
     border-radius: 5px;
     margin: 8px;
     padding: 20px;
-    width: 800px;
+    width: 700px;
     border-color: lightpink;
 }
 
