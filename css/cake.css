@@ -75,6 +75,8 @@ body
 .image {
     width: 500px;
     display: block;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
 }
 .overlay {
     position: absolute;
@@ -88,6 +90,8 @@ body
     opacity: 0;
     transition: .5s ease;
     background-color: black;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
 }
 .col-sm-3:hover .overlay {
     opacity: 0.5;
