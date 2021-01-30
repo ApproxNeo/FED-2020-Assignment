@@ -216,10 +216,16 @@ form button{
     text-align:center;
 }
 
-table, tr, th{
-    border:2px solid black;
-    font-weight:400;
-    padding:23px 2px 24px 2px;
+
+table, tr, th {
+    border: 2px solid black;
+    font-weight: 400;
+    padding: 23px 2px 24px 2px;
+}
+
+table {
+    margin: auto;
+    width: 100%;
 }
 
 
@@ -234,6 +240,7 @@ table #one{
 table #two{
     background-color:white;
 }
+
 
 #credits{
     font-size:1.5vh;

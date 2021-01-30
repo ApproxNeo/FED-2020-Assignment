@@ -91,6 +91,6 @@ function output() {
     //submission
     if (submit == 5) {
         document.getElementById("output-message").innerHTML = "Thank you for your order! We will contact you at " + phone + " to update you on your order.";
-        document.getElementById("order").reset();
+        document.getElementById("form").reset();
     }
 }
