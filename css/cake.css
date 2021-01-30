@@ -11,7 +11,7 @@ body
 .paragraph {
     font-family: 'Noto Sans JP', sans-serif;
     margin: 10px;
-    font-size: 25px;
+    font-size: 20px;
     color: floralwhite;
 }
 
@@ -19,7 +19,7 @@ body
     font-family: 'Allan', cursive;
     margin: 10px;
     color: floralwhite;
-    font-size: 80px;
+    font-size: 50px;
     white-space: nowrap;
 }
 
@@ -27,12 +27,50 @@ body
     font-family: 'Noto Sans JP', sans-serif;
     margin: 10px;
     color: floralwhite;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-/*----- 1. ABOUT CAKE -----*/
+/*----- COLLAPSIBLE -----*/
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    width: 110.5%;
+}
+.collapsible:hover {
+    opacity: 0.9;
+}
+.content {
+    padding: 10px 10px;
+    display: none;
+    overflow: hidden;
+    width: 110.5%;
+    height: 45%;
+    word-wrap: break-word;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+.overlayText {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 .col-sm-3 {
     position: relative;
+    margin: 50px;
 }
 .image {
     width: 500px;
@@ -45,104 +83,13 @@ body
     bottom: 0;
     left: 0;
     right: 0;
-    height: auto;
+    height: 280px;
     width: 500px;
-    /*opacity: 0;*/
+    opacity: 0;
     transition: .5s ease;
     background-color: black;
 }
-.hide {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 .col-sm-3:hover .overlay {
     opacity: 0.5;
-}
-.textbox {
-    display: none;
-    font-weight: normal;
-    color: red;
-}
-.show {
-    display: none;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.hide:target + .show {
-    display: inline;
-    text-decoration: none;
-}
-.hide:target {
-    display: none;
-    text-decoration: none;
-}
-.hide:target ~ .answer {
-    display: inline;
-    text-decoration: none;
-}
-@media print {
-    .hide, .show {
-        display: none;
-    }
-}
-
-.accordion__button {
-    display: flex;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: black;
-    border: 0;
-    opacity: 0;
-}
-.accordion__button::after {
-    content: '\25be';
-    float: right;
-    transform: scale(1.5);
-}
-.accordion__button--active + .accordion__content {
-    display: block;
-}
-.accordion__button--active {
-    /*background: #555555;*/
-    background: red;
-}
-.accordion__button--active::after {
-    content: '\25b4';
-}
-.accordion__content {
-    /*overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.2s;*/
-    padding: 0 15px;
-    margin-top: 280px;
-    padding-bottom: 100px;
-    color: black;
-    display: none;
-    background: #555555;
-    text-wrap: normal;
-    fill-opacity: 100%;
 }
 /*-------------------------*/

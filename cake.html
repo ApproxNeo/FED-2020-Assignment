@@ -31,45 +31,81 @@
         </div>
     </header>
     <!------------------>
+
     <!----- MAIN ----->
     <main>
-        <!----- 1. ABOUT CAKE ----->
-        <div class="row" style="padding: 50px;">
+        <div class="row" style="display: flex;">
+            <!----- 1. ABOUT CAKE ----->
             <div class="col-sm-3">
-                <img src="images/PoundCake.jpeg" alt="Pound Cake" class="image" />
                 <div class="overlay">
-                    <!--
-                        <a href="#hide1" class="hide" id="hide1">Click Me!</a>
-                        <a href="#show1" class="show" id="show1">About Cake</a>
-                        <div class="textbox">
-                            <p>TESTTESTTEST</p>
-                        </div>
-                        -->
-                    <div class="accordion">
-                        <button type="button" class="accordion__button">Click Me!</button>
-                        <div class="accordion__content" style="max-height: 100px">
-                            <h2>About Cake!</h2>
-                            <p>TESTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT</p>
-                        </div>
-                    </div>
-                    <script src="js/cake.js">
-                        document.querySelectorAll('.accordion__button').forEach(button => {
-                            button.addEventListener('click', () => {
-                                //const accordionContent = button.nextElementSibling;
-                                button.classList.toggle('accordion__button--active');
-                                /*if (button.classList.contains('accordion__button--active')) {
-                                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-                                } else {
-                                    accordionContent.style.maxHeight = 0;
-                                }*/
-                            });
-                        });
-                    </script>
+                    <div class="overlayText">Pound Cake</div>
+                </div>
+                <img src="images/PoundCake.jpeg" alt="Pound Cake" class="image" />
+                <button type="button" class="collapsible">Click Me!</button>
+                <div class="content" style="background-color: #FF5757;">
+                    <h2 class="header">About Cake!</h2>
+                    <p class="paragraph">
+                        A breadlike food made from a dough or batter that is usually fried or baked in small flat shapes and is often unleavened.
+                        Often served at birthday parties or any other special occasion!
+                    </p>
+                    <cite class="cite">https://www.merriam-webster.com/dictionary/cake</cite>
                 </div>
             </div>
+            <!------------------------->
+            <!----- 2. HISTORY CAKE ----->
+            <div class="col-sm-3">
+                <div class="overlay">
+                    <div class="overlayText">Butter Cake</div>
+                </div>
+                <img src="images/ButterCake.jpg" alt="Butter Cake" class="image" />
+                <button type="button" class="collapsible">Click Me!</button>
+                <div class="content" style="background-color: #00C2CB">
+                    <h2 class="header">History of Cake!</h2>
+                    <p class="paragraph">Surprisingly, the first cake was made by the Ancient Egyptians! Their culture was the first to show evidence of advanced baking skills.</p>
+                    <cite class="cite">https://www.foodtimeline.org/foodcakes.html</cite>
+                </div>
+            </div>
+            <!--------------------------->
+            <!----- 3. TYPE CAKE ----->
+            <div class="col-sm-3">
+                <div class="overlay">
+                    <div class="overlayText">Chiffon Cake</div>
+                </div>
+                <img src="images/ChiffonCake.jpg" alt="Pound Cake" class="image" />
+                <button type="button" class="collapsible">Click Me!</button>
+                <div class="content" style="background-color: #7ED957">
+                    <h2 class="header">Types of Cake!</h2>
+                    <ul class="paragraph">
+                        <li>Butter Cake</li>
+                        <li>Carrot Cake</li>
+                        <li>Chiffon Cake</li>
+                        <li>Pound Cake</li>
+                        <li>Red Velvet Cake</li>
+                        <li>Sponge Cake</li>
+                    </ul>
+                </div>
+            </div>
+            <!------------------------>
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } else {
+                            content.style.display = "block";
+                        }
+                    });
+                }
+            </script>
         </div>
     </main>
     <!---------------->
+
     <!----- FOOTER ----->
     <footer>
         <div class="row">
