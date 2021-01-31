@@ -1,11 +1,11 @@
 ﻿/*----- Constant -----*/
-body
-{
-    background-color: mediumturquoise;
+body {
 }
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .paragraph {
@@ -97,3 +97,102 @@ body
     opacity: 0.5;
 }
 /*-------------------------*/
+/*----- BOX -----*/
+#boxRow {
+    display: block;
+    text-align: center;
+    background: #FF5757;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.boxHeader {
+    font-family: 'Allan', cursive;
+    margin: 10px;
+    color: floralwhite;
+    font-size: 100px;
+    white-space: nowrap;
+}
+.boxPara {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: floralwhite;
+    word-break: break-word;
+}
+/*----- IFRAME -----*/
+.video {
+    width: 100%;
+    height: 600px;
+    max-width: 1000px;
+    margin: 35px;
+}
+/*------------------*/
+/*----- TABLE -----*/
+#ingredients {
+    border-collapse: collapse;
+    float: right;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 35px;
+    margin-right: 25px;
+    background-color: #08848a;
+}
+td, th {
+    border: 1px solid floralwhite;
+    text-align: left;
+    padding: 8px;
+    font-size: 20px;
+    color: floralwhite;
+}
+tr:nth-child(even) {
+    background-color: #00C2CB;
+}
+#steps {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-bottom: 35px;
+    margin-right: 80px;
+}
+.steps {
+    display: flex;
+    float: left;
+    position: relative;
+    text-align: justify;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    background-color: #08848a;
+}
+/*-----------------*/
+/*----- FORM -----*/
+.myForm {
+    float: right;
+    background-color: #7ED957;
+    width: 100%;
+    max-width: 800px;
+}
+.label {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    -webkit-text-stroke: 0.2px;
+    -webkit-text-stroke-color: black;
+    color: floralwhite;
+}
+#textarea {
+    padding: 5px;
+}
+#credits {
+    float: right;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    max-width: 800px;
+    margin-top: 50px;
+    padding: 10px;
+    background: #FF5757;
+    border: double;
+}
+#creditPara {
+    padding: 10px;
+}
