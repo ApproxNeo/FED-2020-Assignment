@@ -44,4 +44,5 @@ function expandContent() {
     document.getElementById("content").style.setProperty("height", "auto");
     document.getElementById("content").style.setProperty("opacity", "1");
     document.getElementById("content").scrollIntoView({ behavior: "smooth" });
+    setTimeout(navbar, 1000);
 }

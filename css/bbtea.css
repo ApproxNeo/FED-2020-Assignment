@@ -4,6 +4,8 @@
     font-weight: bold;
 }
 
+
+
 h2 {
     font-family: 'Amatic SC', cursive;
     font-size:50px;
@@ -160,17 +162,17 @@ h2 {
                 transform: translate3d(-4.5px, -4.5px, 50px) scale(.95)
             }
 
-#recipeBlended i,
-#recipeBlended a,
-#recipeBlended p,
-#recipeBlended h1,
-#recipeBlended img {
-    margin: 10px;
-}
+            #recipeBlended i,
+            #recipeBlended a,
+            #recipeBlended p,
+            #recipeBlended h1,
+            #recipeBlended img {
+                margin: 10px;
+            }
 
-#recipeBlended img {
-    height: 30vh;
-}
+            #recipeBlended img {
+                height: 30vh;
+            }
 
 #topic {
     background-color: antiquewhite;
@@ -221,44 +223,44 @@ td, th {
     box-sizing: border-box;
 }
 
-.submission {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
+        .submission {
+            width: 80%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
 
 .survey {
     border-radius: 50px;
 }
 
-.columns {
-    display: flex;
-    display: -ms-flexbox;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -.4rem;
-    margin-right: -.4rem
-}
-
-    .columns.col-gapless {
-        margin-left: 0;
-        margin-right: 0
-    }
-
-        .columns.col-gapless > .column {
-            padding-left: 0;
-            padding-right: 0
+        .columns {
+            display: flex;
+            display: -ms-flexbox;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-left: -.4rem;
+            margin-right: -.4rem
         }
 
-    .columns.col-oneline {
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        overflow-x: auto
-    }
+            .columns.col-gapless {
+                margin-left: 0;
+                margin-right: 0
+            }
+
+                .columns.col-gapless > .column {
+                    padding-left: 0;
+                    padding-right: 0
+                }
+
+            .columns.col-oneline {
+                -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+                overflow-x: auto
+            }
 
 
 .col-mx-auto {

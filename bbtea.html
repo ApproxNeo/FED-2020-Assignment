@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
 
-    <!--bootstrap-->
+    <!--scripts-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bbtea.js"></script>
@@ -85,11 +85,10 @@
                         </div>
                         <div class="main-nav-list active-element">
                             <ul>
-                                <li><a href="#0">Brief History</a></li>
-                                <li><a href="#0">Fun Facts!</a></li>
-                                <li><a href="#0" class="mobile-hide">EZ BB TEA Recipe</a></li>
-                                <li><a href="#0" class="active-link">About</a></li>
-                                <li><a href="#0">Contact</a></li>
+                                <li><a href="#row1">Fun Facts!</a></li>
+                                <li><a href="#0">Recipe</a></li>
+                                <li><a href="#0">Survey</a></li>
+                                <li><a href="#0">Others</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -102,7 +101,7 @@
         </section>
 
 
-        <div class="row no-gutters">
+        <div class="row no-gutters" id="row1">
             <div class="col-sm-6">
                 <div class="col-sm-8 col-mx-auto" style="margin:10vh;">
                     <h2>BB Tea Facts!</h2>
@@ -167,19 +166,10 @@
                         <h2>Bubble Tea</h2>
                     </div>
                     <div class="parallax-back">
-
-
-
-
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
         <div class="row" style="background-color:#b4da55;padding-top:20px;">
             <div class="col-md-4">
                 <h2 style="text-align:center;"><span id="topic">Make your own B.B. tea!</span></h2>
@@ -236,7 +226,7 @@
             </div>
         </div>
 
-        <div class="row" style="margin:30px 0 30px 0;">
+        <div class="row img-fluid" style="margin:30px 0 30px 0;">
             <div class="col-md-4">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="margin-left:auto;margin-right:auto;">
                     <div class="carousel-inner">
@@ -303,26 +293,30 @@
 
             
         </div>
-        <div class="row" style="border-top:solid;">
-            <div class="col-sm-6" style="background-color:gainsboro;">
-                <img src="images/anatomy.gif" style="margin:0 auto;width:50%"/>
+        <div class="row no-gutters" style="border-top:solid;">
+            <div class="col-sm-3" style="background-color:gainsboro;">
+                <img src="images/anatomy.gif" style="margin:0 auto;width:100%" />
             </div>
-            <div class="col-sm-3" id="recipeBlended" style="background-color:#b4da55";>
+            <div class="col-sm3" style="width:25%;">
+
+            </div>
+            <div class="col-sm-3" id="recipeBlended" style="background-color:#b4da55" ;>
                 <div>
                     <img class="img-fluid;" style="max-width:100%;" src="images/matcha.jpg" />
                     <div class="text">
                         <h2 class="food">
-                            Ice Blended Bubble Tea
+                            Matcha Bubble Tea
                         </h2>
                         <i class="fa fa-clock-o"> 15 Mins</i>
                         <i class="fa fa-users"> Serves 2-3</i>
 
-                        <p style="margin:10px;" class="info">Keen to try a variation of the clasical bubble tea? Check out this recipe for an ice blended version!</p>
+                        <p style="margin:10px;" class="info">Bubble Tea has always been a catalyst for different flavors! Try this if you like Matcha</p>
                     </div>
                     <a href="#" class="btn" style="background-color:bisque;">Let's get started!</a>
                 </div>
             </div>
-            <div class="col-sm-3" id="recipeBlended" style="background-color:#f42069";>
+
+            <div class="col-sm-3" id="recipeBlended" style="background-color:#f42069" ;>
                 <div>
                     <img class="img-fluid;" style="max-width:100%;" src="images/iceBlend.jpg" />
                     <div class="text">
