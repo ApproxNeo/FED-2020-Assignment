@@ -130,6 +130,7 @@
     text-align: center;
     text-transform: uppercase;
     transition-delay: 130ms;
+    color: white;
 }
 
 .main-nav-list .mobile-hide { /** Hide the link when viewing site on mobile devices. **/
